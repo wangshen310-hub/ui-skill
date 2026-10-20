@@ -1,0 +1,73 @@
+[
+  {
+    "check": "source",
+    "phase": "before",
+    "app_sha256": "a4d8481d45d94c60ed960605cd9a0be6eb88338e15081c2aef0c772f77dfac57"
+  },
+  {
+    "check": "caret-before-error-bar",
+    "cursor": [
+      110,
+      54,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      95
+    ],
+    "cursor_fully_visible": true,
+    "cursor_intersects": true,
+    "notes_height": 127,
+    "window": [
+      640,
+      480
+    ],
+    "focus": "notesEdit",
+    "cursor_at_end": true,
+    "scroll": 68
+  },
+  {
+    "check": "caret-after-real-eisdir",
+    "cursor": [
+      110,
+      54,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      28
+    ],
+    "cursor_fully_visible": false,
+    "cursor_intersects": false,
+    "notes_height": 60,
+    "window": [
+      640,
+      480
+    ],
+    "focus": "notesEdit",
+    "cursor_at_end": true,
+    "scroll": 68,
+    "raw_error": "[Errno 21] Is a directory: '/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/before/own-narrow-data/.projects-hbx9lcbd.tmp' -> '/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/before/own-narrow-data/projects.json'",
+    "content_preserved": true,
+    "original_bytes_preserved": true
+  },
+  {
+    "check": "damaged-file-error-page",
+    "labels": [
+      "无法打开本地项目",
+      "未修改原文件。请检查项目文件后重新读取。\nExpecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    ],
+    "original_bytes_preserved": true
+  },
+  {
+    "check": "complete",
+    "phase": "before",
+    "passed": true
+  }
+]

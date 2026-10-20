@@ -1,0 +1,135 @@
+[
+  {
+    "check": "source",
+    "phase": "after",
+    "app_sha256": "7114dfc713796249423ce085e32e17dc312963ea6eb2f351fe1a473a8f5d3657"
+  },
+  {
+    "check": "caret-before-error-bar",
+    "cursor": [
+      110,
+      54,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      95
+    ],
+    "cursor_fully_visible": true,
+    "cursor_intersects": true,
+    "notes_height": 127,
+    "window": [
+      640,
+      480
+    ],
+    "focus": "notesEdit",
+    "cursor_at_end": true,
+    "scroll": 68
+  },
+  {
+    "check": "caret-after-real-eisdir",
+    "cursor": [
+      110,
+      0,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      28
+    ],
+    "cursor_fully_visible": true,
+    "cursor_intersects": true,
+    "notes_height": 60,
+    "window": [
+      640,
+      480
+    ],
+    "focus": "notesEdit",
+    "cursor_at_end": true,
+    "scroll": 70,
+    "raw_error": "[Errno 21] Is a directory: '/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/own-narrow-data/.projects-mxeejl9w.tmp' -> '/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/own-narrow-data/projects.json'",
+    "content_preserved": true,
+    "original_bytes_preserved": true
+  },
+  {
+    "check": "recovered-save-keeps-caret",
+    "cursor": [
+      110,
+      54,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      95
+    ],
+    "cursor_fully_visible": true,
+    "cursor_intersects": true,
+    "notes_height": 127,
+    "window": [
+      640,
+      480
+    ],
+    "focus": "notesEdit",
+    "cursor_at_end": true,
+    "scroll": 68,
+    "status": "已保存到本机 · 07:34"
+  },
+  {
+    "check": "unfocused-notes-reading-position-preserved",
+    "before_scroll": 12,
+    "after_scroll": 12,
+    "focus": "titleEdit",
+    "insertion_position_unchanged": true
+  },
+  {
+    "check": "damaged-file-error-page",
+    "labels": [
+      "无法打开本地项目",
+      "项目文件内容无法读取。请先备份，再修复此文件或恢复可用备份。\n程序未覆盖或重置项目文件。处理后点击“重新读取”。",
+      "项目文件位置"
+    ],
+    "original_bytes_preserved": true
+  },
+  {
+    "check": "keyboard-copy-path-field",
+    "clipboard": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/own-broken-data/projects.json",
+    "expected": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/own-broken-data/projects.json"
+  },
+  {
+    "check": "keyboard-copy-button",
+    "clipboard": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/own-broken-data/projects.json",
+    "feedback": "位置已复制"
+  },
+  {
+    "check": "optional-diagnostics",
+    "diagnostic": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "visible": true
+  },
+  {
+    "check": "repair-file-then-keyboard-reload",
+    "count": 3,
+    "focus": "projectList",
+    "repaired_file_unchanged": true
+  },
+  {
+    "check": "normal-keyboard-save-return-reopen",
+    "real_title": "陶器上新 · 周三补拍（补拍灯光、人物站位以及备用机位） · 核对",
+    "expected_title": "陶器上新 · 周三补拍（补拍灯光、人物站位以及备用机位） · 核对",
+    "title_restored": true,
+    "focus": "titleEdit"
+  },
+  {
+    "check": "complete",
+    "phase": "after",
+    "passed": true
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "created_at_utc": "2026-10-20T23:36:29.663891+00:00",
+  "case": "r04-drafts-review-repair",
+  "target_platform": "desktop-app",
+  "actual_runtime": "PySide6/xcb privateXvfb; real EISDIR; Qt clipboard and keyboard",
+  "declared_skill_revision": "5328f80 original generation; R4 manual case repair",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/r03-error-exit/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "c7d8512397ec1422d3646fb059b0b88f2de1a54b6627bc7f07282db3eb6525f4",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "8f4fcefcdae3067984de88b5f51a0969d2c36c0b8e8d18ea81f15cb8efbf3e12",
+    "references/verification.md": "6ea8d0aa1bd6934ca4902fe84de5dfb92edbc18668e25421337db78060c2271a",
+    "references/writing.md": "0c42752fc541f1d9f2ea33a1e1e201bf6c0390e68e5c624eaa1bc3dcd0aedc4d",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "report",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/report.txt",
+      "sha256": "824f7a5bcd7d1b3d1260c8b4f5dc059e48800513da4d9c50d1d7474b84070faf",
+      "bytes": 3223,
+      "stored_file": "report.txt"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/source-7114dfc.tar.gz",
+      "sha256": "6b04474081b7b98bfe4aa2715cb8e4d5b9b261fba7c1b1fa483d950878dcd3f2",
+      "bytes": 17964,
+      "stored_file": "source.gz"
+    },
+    {
+      "label": "before",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/before/raw-results.json",
+      "sha256": "bb3b4c84d7f04028bff868ef110e10865a1665e524451805a768ff45ec0bacf0",
+      "bytes": 1591,
+      "stored_file": "before.json"
+    },
+    {
+      "label": "after",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/raw-results.json",
+      "sha256": "3dcb81ea47ed1956e7f902345118af1ea1eb858d1a222356a380c1281ac29cba",
+      "bytes": 3388,
+      "stored_file": "after.json"
+    },
+    {
+      "label": "hidden-caret",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/before/02-real-save-failure.png",
+      "sha256": "8b7f23381e5710b4b2e791ba697b25c4248b57025344f8c5fdc10400c6e7f20e",
+      "bytes": 52149,
+      "png_size": {
+        "width": 640,
+        "height": 480
+      },
+      "stored_file": "hidden-caret.png"
+    },
+    {
+      "label": "visible-caret",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/02-real-save-failure.png",
+      "sha256": "16e6c3988c6a3d86d2de757d33a9665b7f32167d89985ae44325f2a4d6a8ea73",
+      "bytes": 47079,
+      "png_size": {
+        "width": 640,
+        "height": 480
+      },
+      "stored_file": "visible-caret.png"
+    },
+    {
+      "label": "load-error",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/03-load-failure.png",
+      "sha256": "4565796966af9ec1ba847d76e8a880bc2b1059e32cb207bad770b7a8ea4b5ede",
+      "bytes": 50000,
+      "png_size": {
+        "width": 1180,
+        "height": 780
+      },
+      "stored_file": "load-error.png"
+    },
+    {
+      "label": "narrow-error",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/03b-load-failure-narrow.png",
+      "sha256": "f808ced0da4b1b6afb48365afa1b8987c030fa58ce1a20442d6f47c72b6f7f30",
+      "bytes": 42681,
+      "png_size": {
+        "width": 640,
+        "height": 480
+      },
+      "stored_file": "narrow-error.png"
+    },
+    {
+      "label": "diagnostics",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/04-load-failure-diagnostics.png",
+      "sha256": "d6714f96d981eb25640007d39ed9d797c99984233df31ed3605a952ad9a9f9d6",
+      "bytes": 52367,
+      "png_size": {
+        "width": 640,
+        "height": 480
+      },
+      "stored_file": "diagnostics.png"
+    },
+    {
+      "label": "normal",
+      "source": "/opt/ui-skill-lab-20261020/round-0004-drafts-repair/evidence/after/05-normal-reopened.png",
+      "sha256": "3a053a87d6e13773a83b0f0f5284adf0d4c9a0a9173c37343459d5c2e431704d",
+      "bytes": 51624,
+      "png_size": {
+        "width": 640,
+        "height": 480
+      },
+      "stored_file": "normal.png"
+    }
+  ]
+}
