@@ -1,0 +1,146 @@
+[
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/01-shelf-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "8c5baad807b4d82fc439cfe8838ed6f5c9b47c4aab6f5b67c93b535b43d259ac"
+  },
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/02-reader-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "f772f1877d3d4096b88b870f16738233408fadf3e3073f8b734922530762695e"
+  },
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/03-resumed-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "903e87faffcd0506e761448d08e6a32098a83fc9f647819b4c6dcb453c34efe7"
+  },
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/04-font-settings-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "591b53c459e1b7d608eef8e872f0214b317f769397e67b5b70c5959df8868ebe"
+  },
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/05-reader-font-large-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "584b49588ebdfb1c18e31c8eb71dc32688d7e3f42159555ae39a0a8e26331707"
+  },
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/06-shelf-320x640-scale2.png",
+    "png_width": 640,
+    "png_height": 1280,
+    "sha256": "bd787fd05e6bff0b374b0a5f2606773bd74f06ab2a4b892ff58ddc81becfb0d0"
+  },
+  {
+    "path": "evidence/attempt-before-large-type-fix/screenshots/07-reader-320x640-scale2.png",
+    "png_width": 640,
+    "png_height": 1280,
+    "sha256": "fef9023897ce3ddd0ef90b3664c54e17ec4b05bb2a49f1e995ac092e74d5dd7d"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/01-shelf-390x844.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "bbb4173ca05a8f5b332f2ff5fb54f8ceb490539eed8614a9999dd3b5fec82c51"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/02-reader-390x844.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "e12c4b9b1cb658ed6d7d3a522f5923ff0461eab2113f83f0e186254b613ec431"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/03-resumed-390x844.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "3242dbfaf48a93bc80d84b4065752b5608f484be78bc640e295592264ddb4018"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/04-font-settings-390x844.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "722d1981d84f4685283bb697dc6b89e4ee560da4f5bb743761eec0eabc29fe14"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/05-reader-font-large-390x844.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "b43f418dc8786dad88b175de0a0a274769abd1d601c2f82b786728e95d677594"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/06-shelf-320x640-scale2.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "c056f4a0e390cba5b8b331fd022a2af2f3621011a7e50d5ac75b6eb644291fb5"
+  },
+  {
+    "path": "evidence/attempt-before-surface-fix/screenshots/07-reader-320x640-scale2.png",
+    "png_width": 1600,
+    "png_height": 1200,
+    "sha256": "cbb51d6c26243de69d380e48384846684e5a1bce89a0a319d8db552e74130a2a"
+  },
+  {
+    "path": "evidence/reading-reference.png",
+    "png_width": 1475,
+    "png_height": 1066,
+    "sha256": "e414737acdbd6cfbc467f4fd5975d2f4be231e5341e92ba6037eef8bb182cc88"
+  },
+  {
+    "path": "evidence/screenshots-final/01-shelf-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "8c5baad807b4d82fc439cfe8838ed6f5c9b47c4aab6f5b67c93b535b43d259ac"
+  },
+  {
+    "path": "evidence/screenshots-final/02-reader-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "f772f1877d3d4096b88b870f16738233408fadf3e3073f8b734922530762695e"
+  },
+  {
+    "path": "evidence/screenshots-final/03-resumed-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "903e87faffcd0506e761448d08e6a32098a83fc9f647819b4c6dcb453c34efe7"
+  },
+  {
+    "path": "evidence/screenshots-final/04-font-settings-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "591b53c459e1b7d608eef8e872f0214b317f769397e67b5b70c5959df8868ebe"
+  },
+  {
+    "path": "evidence/screenshots-final/05-reader-font-large-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "584b49588ebdfb1c18e31c8eb71dc32688d7e3f42159555ae39a0a8e26331707"
+  },
+  {
+    "path": "evidence/screenshots-final/06-shelf-320x640-scale2.png",
+    "png_width": 640,
+    "png_height": 1280,
+    "sha256": "9de8979c492700a9229f278197587d47fbff43f0fa5574d0cb1fd8974995e1c9"
+  },
+  {
+    "path": "evidence/screenshots-final/07-reader-320x640-scale2.png",
+    "png_width": 640,
+    "png_height": 1280,
+    "sha256": "fef9023897ce3ddd0ef90b3664c54e17ec4b05bb2a49f1e995ac092e74d5dd7d"
+  },
+  {
+    "path": "evidence/screenshots-initial-engine/01-shelf-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "8c5baad807b4d82fc439cfe8838ed6f5c9b47c4aab6f5b67c93b535b43d259ac"
+  },
+  {
+    "path": "evidence/screenshots-initial-engine/02-reader-390x844.png",
+    "png_width": 780,
+    "png_height": 1688,
+    "sha256": "f772f1877d3d4096b88b870f16738233408fadf3e3073f8b734922530762695e"
+  }
+]

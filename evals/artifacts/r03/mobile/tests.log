@@ -1,0 +1,14 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/reading_flow_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: phone flow, real file persistence, font settings and three books
+ENGINE_SCREENSHOT 01-shelf-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 02-reader-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 03-resumed-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 04-font-settings-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 05-reader-font-large-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+00:09 +1: 320px width and 200 percent system text remain usable
+ENGINE_SCREENSHOT 06-shelf-320x640-scale2 logical=Size(320.0, 640.0) pixels=640x1280
+ENGINE_SCREENSHOT 07-reader-320x640-scale2 logical=Size(320.0, 640.0) pixels=640x1280
+00:17 +2: (tearDownAll)
+00:17 +2: All tests passed!

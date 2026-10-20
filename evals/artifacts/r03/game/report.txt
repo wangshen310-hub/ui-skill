@@ -1,0 +1,51 @@
+# 轨道航行暂停菜单验收
+
+2026-10-20，最终验收完成。所有应用运行、截图和验收均在腾讯云 `tencent-opencloudos` 的 `/opt/ui-skill-lab-20261020/round-0003-game`；控制端 `/tmp/ui-skill-lab-20261020/round-0003-game` 仅编辑、传输、查看文件。使用既有虚拟环境作为运行环境，未修改技能仓库、其他案例或生产配置，未推送。
+
+最终结果：[results.json](evidence/verified-final-title-hints-20261020/results.json) 共 44 条记录、29 项断言通过、10 张实际应用截图、0 项失败，菜单退出码 0。详情及进程清理结果见 [runtime-summary.json](evidence/verified-final-title-hints-20261020/runtime-summary.json)。其中 11 项手柄断言使用显式标记的合成 Pygame 事件，**不属于实体手柄验收**；实体设备计数为 0。
+
+## 实际执行与结果
+
+```sh
+ssh tencent-opencloudos
+cd /opt/ui-skill-lab-20261020/round-0003-game
+PYTHONDONTWRITEBYTECODE=1 /opt/ui-skill-validation-20261020/venv/bin/python acceptance.py --output-dir evidence/verified-final-title-hints-20261020 > evidence/verified-final-title-hints-20261020.console.jsonl 2>&1
+```
+
+运行环境：OpenCloudOS 9.6，Python 3.11.6，Pygame 2.6.1，SDL 2.28.4，Noto CJK 字体。脚本创建独占 `Xvfb -displayfd 1 -screen 0 1600x1000x24 -nolisten tcp`，以 X11/软件渲染启动真实 Pygame 应用；键盘和窗口操作通过 xdotool 进入 X 服务器。F12 保存当前应用窗口表面，不使用参考图充当运行截图。完整执行耗时 12.345 秒。
+
+- 初始暂停和航行后暂停均在额外等待后保持模拟时钟不变；继续时飞船位置随时钟改变。
+- 键盘继续/暂停、设置调整、保存文件一致性、返回焦点、Tab/Shift+Tab、标题页开始新航行、菜单退出均通过。
+- 实际完成 1440×900 → 1024×640 → 1440×900。窗口 ID 为 `2097160 → 2097171 → 2097182`，回扩及其后操作通过。
+- 合成 D-pad、A、B、Menu 和摇杆事件覆盖导航、设置和暂停/继续；日志保留 `synthetic=true` 与 `hardware_test=false`。
+- 结束恢复星光 60%、轨道指引开启。应用、私有 Xvfb 和 FIFO 已清理；现场 `/proc` 检查无本例残留进程。
+
+## 失败保留与修改
+
+原 `evidence/final` 在修复前另存为 [failed-final-stale-window-id-20261020](evidence/failed-final-stale-window-id-20261020/)，原目录及前 5 次 `initial-attempt-*` 均保留。前两次标题搜索失败，第 3、4 次未取得原生窗口，第 5 次为验收 `record()` 参数名冲突。旧 final 的 27 项通过不能算完整通过：缩窗后 SDL 重建窗口，回扩仍使用启动时的旧 ID `2097160`，导致 xdotool 失败。
+
+验收修复为每次窗口动作前从应用 `state.native_window` 取当前 ID；键盘动作前也重新聚焦当前窗口，并要求输出目录为空，避免覆盖证据。修复后先以原应用源码 c19 完整通过 29 项，结果保留于 [verified-final-20261020](evidence/verified-final-20261020/)，冻结源码为 [app-before-title-hints.py](evidence/verified-final-20261020/app-before-title-hints.py)。
+
+随后检查真实截图发现标题页显示无对应动作的“Esc 返回”/“B 返回”。仅隐藏标题页该提示，保留暂停/设置页提示；增加一张控制器模式标题页截图，再完整复跑得到本报告的最终结果。最终冻结源码位于 [source](evidence/verified-final-title-hints-20261020/source/)。
+
+## 画面检查
+
+已实际查看原参考、改前截图及最终 1440/1024 截图。左侧三项动作、薄荷色焦点、大行星和细轨道仍适合暂停场景；1024 下动作约 19px、提示约 12px，未见截断或遮挡，设置值、保存提示与操作方式清楚。标题页现在仅提示可用的选择/确认操作。参考的星云和复杂飞船没有逐像素复现；本例使用独立行星素材及实时绘制的星点、轨道、飞船和文字。
+
+| 对照 | 截图 |
+| --- | --- |
+| 改前标题页，多余 Esc 提示 | [1440](evidence/verified-final-20261020/04-title-1440x900.png) |
+| 最终标题页，可用操作提示 | [键盘 1440](evidence/verified-final-title-hints-20261020/04-title-1440x900.png) / [合成手柄模式 1024](evidence/verified-final-title-hints-20261020/07-title-1024x640.png) |
+| 最终暂停与设置 | [暂停 1440](evidence/verified-final-title-hints-20261020/10-paused-1440x900.png) / [暂停 1024](evidence/verified-final-title-hints-20261020/09-paused-1024x640.png) / [设置 1024](evidence/verified-final-title-hints-20261020/08-settings-1024x640.png) |
+
+## 源哈希与边界
+
+```text
+原 app.py    c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f
+最终 app.py  483834ddc08acfe3071b27c380408544e5af30e8af2ea52fcaf1c1770e78ccd0
+acceptance.py 6140516be81446f0240875833ade986588546d8fa7d7801208bd6131201467c8
+planet.png   3c43ed63af181513902a73950a6340c230badddc6ec7f4c95993ddeec1f7e9d3
+参考图       d472783c8b4b27da45404923383c0c4b7570a63c5d11856da50515ec8b6c6e9f
+```
+
+本次证明 Xvfb 下真实应用流程和两种尺寸的可用画面；不证明实体手柄、硬件 GPU、声音或长期运行表现，也未验收 1024×640 以下尺寸。源码包 `round-0003-game-source.tar.gz` 仅包含应用、验收脚本、设置、运行所需行星素材及说明，不含 Python、虚拟环境或依赖。

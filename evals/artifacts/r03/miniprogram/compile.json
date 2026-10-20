@@ -1,0 +1,6 @@
+{
+  "environment": "Tencent Cloud official WXML/WXSS compiler; DOM simulator hosted by Chrome, not WeChat",
+  "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/source",
+  "wxml": "passed",
+  "wxss": "passed"
+}

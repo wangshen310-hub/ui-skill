@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-10-20T23:09:31.698437+00:00",
+  "host": "VM-0-17-opencloudos",
+  "os": "OpenCloudOS 9.6",
+  "kernel": "6.6.119-49.23.oc9.x86_64",
+  "python": "3.11.6 (main, Mar  4 2026, 13:33:00) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.7-1)]",
+  "pygame": "2.6.1",
+  "sdl": [
+    2,
+    28,
+    4
+  ],
+  "records": 44,
+  "passed_assertions": 29,
+  "synthetic_controller_assertions": 11,
+  "failures": [],
+  "screenshots": 10,
+  "duration_seconds": 12.345,
+  "remaining_case_processes": [],
+  "fifo_exists": false,
+  "final_settings": {
+    "star_brightness": 60,
+    "orbit_guides": true
+  },
+  "source_sha256": {
+    "app.py": "483834ddc08acfe3071b27c380408544e5af30e8af2ea52fcaf1c1770e78ccd0",
+    "acceptance.py": "6140516be81446f0240875833ade986588546d8fa7d7801208bd6131201467c8",
+    "assets/planet.png": "3c43ed63af181513902a73950a6340c230badddc6ec7f4c95993ddeec1f7e9d3",
+    "reference/pause-reference.png": "d472783c8b4b27da45404923383c0c4b7570a63c5d11856da50515ec8b6c6e9f"
+  }
+}

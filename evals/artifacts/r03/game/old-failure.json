@@ -1,0 +1,949 @@
+[
+  {
+    "time": 1792536161.4897082,
+    "check": "environment",
+    "display": ":0",
+    "host": "VM-0-17-opencloudos",
+    "source_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+  },
+  {
+    "time": 1792536161.851513,
+    "check": "startup_paused",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.0,
+      "ship_position": [
+        1247.279,
+        750.287
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536161.8557723,
+    "check": "native_window",
+    "window_id": 2097160,
+    "geometry": "Window 2097160\n  Position: 80,50 (screen: 0)\n  Geometry: 1440x900",
+    "title": "ORBIT · 轨道航行"
+  },
+  {
+    "time": 1792536162.054055,
+    "check": "screenshot",
+    "label": "initial-pause-1440",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/01-paused-1440x900.png",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.0,
+      "ship_position": [
+        1247.279,
+        750.287
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536162.7044716,
+    "check": "initial_pause_freezes_simulation",
+    "result": "passed",
+    "before": 0.0,
+    "after": 0.0
+  },
+  {
+    "time": 1792536162.900766,
+    "check": "keyboard_resume",
+    "result": "passed",
+    "state": {
+      "screen": "flight",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.166,
+      "ship_position": [
+        1242.819,
+        749.159
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536163.8969688,
+    "check": "screenshot",
+    "label": "flight-moving",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/02-flight-1440x900.png",
+    "state": {
+      "screen": "flight",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.025,
+      "ship_position": [
+        1218.978,
+        742.546
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536164.0925934,
+    "check": "keyboard_pause",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536164.743082,
+    "check": "pause_freezes_after_flight",
+    "result": "passed",
+    "before": 1.125,
+    "after": 1.125,
+    "prior_moving": {
+      "screen": "flight",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.025,
+      "ship_position": [
+        1218.978,
+        742.546
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536165.1335955,
+    "check": "keyboard_open_settings",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536165.528094,
+    "check": "brightness_changes",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": true
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536165.9221056,
+    "check": "orbit_guides_off",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 1,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536166.1178315,
+    "check": "screenshot",
+    "label": "settings-changed-1440",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/03-settings-1440x900.png",
+    "state": {
+      "screen": "settings",
+      "selection": 1,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536166.1179798,
+    "check": "settings_file_matches",
+    "result": "passed",
+    "saved": {
+      "star_brightness": 40,
+      "orbit_guides": false
+    }
+  },
+  {
+    "time": 1792536166.3134003,
+    "check": "settings_returns_focus",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 1,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536166.508878,
+    "check": "tab_next",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 2,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536166.7172344,
+    "check": "shift_tab_previous",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 1,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536167.1105187,
+    "check": "return_title",
+    "result": "passed",
+    "state": {
+      "screen": "title",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536167.3091333,
+    "check": "screenshot",
+    "label": "title-1440",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/04-title-1440x900.png",
+    "state": {
+      "screen": "title",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 1.125,
+      "ship_position": [
+        1216.122,
+        741.693
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536167.526267,
+    "check": "title_start_flight",
+    "result": "passed",
+    "state": {
+      "screen": "flight",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.169,
+      "ship_position": [
+        1242.738,
+        749.138
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1440,
+        900
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097160,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536167.9050949,
+    "check": "resize_to_1024",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536168.108456,
+    "check": "screenshot",
+    "label": "pause-1024",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/05-paused-1024x640.png",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536168.2888567,
+    "check": "synthetic_dpad_focus",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 1,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536168.46929,
+    "check": "synthetic_A_settings",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 40,
+        "orbit_guides": false
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536168.6496756,
+    "check": "synthetic_setting_adjustment",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": false
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536169.0102456,
+    "check": "synthetic_A_toggle",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 1,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536169.2067637,
+    "check": "screenshot",
+    "label": "controller-settings-1024",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/06-settings-1024x640.png",
+    "state": {
+      "screen": "settings",
+      "selection": 1,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536169.3877985,
+    "check": "synthetic_B_restores_focus",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 1,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536169.5681221,
+    "check": "synthetic_stick_focus",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 2,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536169.748488,
+    "check": "synthetic_title",
+    "result": "passed",
+    "state": {
+      "screen": "title",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.203,
+      "ship_position": [
+        1241.818,
+        748.901
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536169.928839,
+    "check": "synthetic_start",
+    "result": "passed",
+    "state": {
+      "screen": "flight",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.167,
+      "ship_position": [
+        1242.792,
+        749.152
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536170.109238,
+    "check": "synthetic_menu_pause",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.167,
+      "ship_position": [
+        1242.792,
+        749.152
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536170.2896156,
+    "check": "synthetic_B_resume",
+    "result": "passed",
+    "state": {
+      "screen": "flight",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.332,
+      "ship_position": [
+        1238.311,
+        747.982
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536170.469955,
+    "check": "synthetic_menu_repause",
+    "result": "passed",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "controller",
+      "simulation_time": 0.332,
+      "ship_position": [
+        1238.311,
+        747.982
+      ],
+      "settings": {
+        "star_brightness": 50,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    },
+    "hardware_test": false
+  },
+  {
+    "time": 1792536171.0597556,
+    "check": "restore_default_settings",
+    "result": "passed",
+    "state": {
+      "screen": "settings",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.332,
+      "ship_position": [
+        1238.311,
+        747.982
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536171.255599,
+    "check": "screenshot",
+    "label": "settings-final-1024",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/07-settings-1024x640.png",
+    "state": {
+      "screen": "settings",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.332,
+      "ship_position": [
+        1238.311,
+        747.982
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536171.8432784,
+    "check": "screenshot",
+    "label": "pause-final-1024",
+    "path": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/final/08-paused-1024x640.png",
+    "state": {
+      "screen": "paused",
+      "selection": 0,
+      "input_mode": "keyboard",
+      "simulation_time": 0.332,
+      "ship_position": [
+        1238.311,
+        747.982
+      ],
+      "settings": {
+        "star_brightness": 60,
+        "orbit_guides": true
+      },
+      "window": [
+        1024,
+        640
+      ],
+      "physical_controllers": 0,
+      "video_driver": "x11",
+      "native_window": 2097171,
+      "revision_sha256": "c19c547b0b552dfc3bf01c7323b10b3a3f69c0720ca5397cbf55669a1d4dc76f"
+    }
+  },
+  {
+    "time": 1792536171.846811,
+    "check": "failure",
+    "error": "CalledProcessError(1, ['xdotool', 'windowsize', '2097160', '1440', '900'])"
+  }
+]
