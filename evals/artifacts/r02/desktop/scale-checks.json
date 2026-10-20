@@ -1,0 +1,17 @@
+{
+  "qpa": "xcb",
+  "display": ":0",
+  "logical_size": [
+    900,
+    640
+  ],
+  "image_pixels": [
+    1350,
+    960
+  ],
+  "device_pixel_ratio": 1.5,
+  "scale_factor": "1.5",
+  "sample_label_visible": true,
+  "controls_visible": true,
+  "window_exposed": true
+}

@@ -1,0 +1,1168 @@
+[
+  {
+    "label": "desktop-initial",
+    "data": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "dialog": {
+        "top": 137.671875,
+        "bottom": 862.328125,
+        "clientHeight": 723,
+        "scrollHeight": 723,
+        "scrollTop": 0
+      },
+      "active": "保留两者",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 164.671875,
+          "bottom": 202.359375,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 797.328125,
+          "bottom": 837.328125,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 797.328125,
+          "bottom": 837.328125,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 797.328125,
+          "bottom": 837.328125,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "desktop-keyboard-focus-order",
+    "data": [
+      {
+        "key": "Tab",
+        "state": {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "dialog": {
+            "top": 137.671875,
+            "bottom": 862.328125,
+            "clientHeight": 723,
+            "scrollHeight": 723,
+            "scrollTop": 0
+          },
+          "active": "取消复制",
+          "activeTag": "BUTTON",
+          "activeVisible": true,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "取消复制",
+              "top": 164.671875,
+              "bottom": 202.359375,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "跳过",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "替换",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "保留两者",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "Tab",
+        "state": {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "dialog": {
+            "top": 137.671875,
+            "bottom": 862.328125,
+            "clientHeight": 723,
+            "scrollHeight": 723,
+            "scrollTop": 0
+          },
+          "active": "跳过",
+          "activeTag": "BUTTON",
+          "activeVisible": true,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "取消复制",
+              "top": 164.671875,
+              "bottom": 202.359375,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "跳过",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "替换",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "保留两者",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "Tab",
+        "state": {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "dialog": {
+            "top": 137.671875,
+            "bottom": 862.328125,
+            "clientHeight": 723,
+            "scrollHeight": 723,
+            "scrollTop": 0
+          },
+          "active": "替换",
+          "activeTag": "BUTTON",
+          "activeVisible": true,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "取消复制",
+              "top": 164.671875,
+              "bottom": 202.359375,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "跳过",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "替换",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "保留两者",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "Tab",
+        "state": {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "dialog": {
+            "top": 137.671875,
+            "bottom": 862.328125,
+            "clientHeight": 723,
+            "scrollHeight": 723,
+            "scrollTop": 0
+          },
+          "active": "保留两者",
+          "activeTag": "BUTTON",
+          "activeVisible": true,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "取消复制",
+              "top": 164.671875,
+              "bottom": 202.359375,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "跳过",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "替换",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "保留两者",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "Shift+Tab",
+        "state": {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "dialog": {
+            "top": 137.671875,
+            "bottom": 862.328125,
+            "clientHeight": 723,
+            "scrollHeight": 723,
+            "scrollTop": 0
+          },
+          "active": "替换",
+          "activeTag": "BUTTON",
+          "activeVisible": true,
+          "horizontalOverflow": false,
+          "buttons": [
+            {
+              "label": "取消复制",
+              "top": 164.671875,
+              "bottom": 202.359375,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "跳过",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "替换",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "label": "保留两者",
+              "top": 797.328125,
+              "bottom": 837.328125,
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "label": "escape-return-focus",
+    "data": {
+      "open": false,
+      "active": "copy",
+      "status": "已取消复制，文件未改动。"
+    }
+  },
+  {
+    "label": "low-initial",
+    "data": {
+      "viewport": [
+        1024,
+        600
+      ],
+      "dialog": {
+        "top": 24,
+        "bottom": 576,
+        "clientHeight": 550,
+        "scrollHeight": 723,
+        "scrollTop": 0
+      },
+      "active": "同名文件已存在",
+      "activeTag": "H1",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 51,
+          "bottom": 88.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "low-page-down",
+    "data": {
+      "viewport": [
+        1024,
+        600
+      ],
+      "dialog": {
+        "top": 24,
+        "bottom": 576,
+        "clientHeight": 550,
+        "scrollHeight": 723,
+        "scrollTop": 0
+      },
+      "active": "同名文件已存在",
+      "activeTag": "H1",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 51,
+          "bottom": 88.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "low-first-tab",
+    "data": {
+      "viewport": [
+        1024,
+        600
+      ],
+      "dialog": {
+        "top": 24,
+        "bottom": 576,
+        "clientHeight": 550,
+        "scrollHeight": 723,
+        "scrollTop": 0
+      },
+      "active": "取消复制",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 51,
+          "bottom": 88.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 683.65625,
+          "bottom": 723.65625,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "low-second-tab",
+    "data": {
+      "viewport": [
+        1024,
+        600
+      ],
+      "dialog": {
+        "top": 24,
+        "bottom": 576,
+        "clientHeight": 550,
+        "scrollHeight": 723,
+        "scrollTop": 173
+      },
+      "active": "跳过",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -122,
+          "bottom": -84.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 510.65625,
+          "bottom": 550.65625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 510.65625,
+          "bottom": 550.65625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 510.65625,
+          "bottom": 550.65625,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "low-keep-focus",
+    "data": {
+      "viewport": [
+        1024,
+        600
+      ],
+      "dialog": {
+        "top": 24,
+        "bottom": 576,
+        "clientHeight": 550,
+        "scrollHeight": 723,
+        "scrollTop": 173
+      },
+      "active": "保留两者",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -122,
+          "bottom": -84.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 510.65625,
+          "bottom": 550.65625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 510.65625,
+          "bottom": 550.65625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 510.65625,
+          "bottom": 550.65625,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "low-keep-result",
+    "data": {
+      "active": "copy",
+      "files": 2,
+      "status": "已保留两者，副本已写入「项目资料」：2026年秋季品牌发布会_场地与视觉执行方案_华东区域团队确认版_2026-10-20（副本）.md"
+    }
+  },
+  {
+    "label": "narrow-initial",
+    "data": {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "clientHeight": 818,
+        "scrollHeight": 1044,
+        "scrollTop": 0
+      },
+      "active": "同名文件已存在",
+      "activeTag": "H1",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 33,
+          "bottom": 70.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 996.625,
+          "bottom": 1036.625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 996.625,
+          "bottom": 1036.625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 996.625,
+          "bottom": 1036.625,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "narrow-page-down",
+    "data": {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "clientHeight": 818,
+        "scrollHeight": 1044,
+        "scrollTop": 0
+      },
+      "active": "同名文件已存在",
+      "activeTag": "H1",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 33,
+          "bottom": 70.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 996.625,
+          "bottom": 1036.625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 996.625,
+          "bottom": 1036.625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 996.625,
+          "bottom": 1036.625,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "narrow-first-tab",
+    "data": {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "clientHeight": 818,
+        "scrollHeight": 1044,
+        "scrollTop": 1
+      },
+      "active": "取消复制",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 32,
+          "bottom": 69.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 995.625,
+          "bottom": 1035.625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 995.625,
+          "bottom": 1035.625,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 995.625,
+          "bottom": 1035.625,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "narrow-second-tab",
+    "data": {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "clientHeight": 818,
+        "scrollHeight": 1044,
+        "scrollTop": 226
+      },
+      "active": "跳过",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -193,
+          "bottom": -155.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 770.625,
+          "bottom": 810.625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 770.625,
+          "bottom": 810.625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 770.625,
+          "bottom": 810.625,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "narrow-keep-focus",
+    "data": {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "clientHeight": 818,
+        "scrollHeight": 1044,
+        "scrollTop": 226
+      },
+      "active": "保留两者",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -193,
+          "bottom": -155.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 770.625,
+          "bottom": 810.625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 770.625,
+          "bottom": 810.625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 770.625,
+          "bottom": 810.625,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "narrow-keep-result",
+    "data": {
+      "active": "copy",
+      "files": 2,
+      "status": "已保留两者，副本已写入「项目资料」：2026年秋季品牌发布会_场地与视觉执行方案_华东区域团队确认版_2026-10-20（副本）.md"
+    }
+  },
+  {
+    "label": "small-initial",
+    "data": {
+      "viewport": [
+        320,
+        568
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 556,
+        "clientHeight": 542,
+        "scrollHeight": 1123,
+        "scrollTop": 0
+      },
+      "active": "同名文件已存在",
+      "activeTag": "H1",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 33,
+          "bottom": 70.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "small-page-down",
+    "data": {
+      "viewport": [
+        320,
+        568
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 556,
+        "clientHeight": 542,
+        "scrollHeight": 1123,
+        "scrollTop": 0
+      },
+      "active": "同名文件已存在",
+      "activeTag": "H1",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 33,
+          "bottom": 70.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "small-first-tab",
+    "data": {
+      "viewport": [
+        320,
+        568
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 556,
+        "clientHeight": 542,
+        "scrollHeight": 1123,
+        "scrollTop": 0
+      },
+      "active": "取消复制",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": 33,
+          "bottom": 70.6875,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 1076.09375,
+          "bottom": 1116.09375,
+          "visible": false,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "small-second-tab",
+    "data": {
+      "viewport": [
+        320,
+        568
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 556,
+        "clientHeight": 542,
+        "scrollHeight": 1123,
+        "scrollTop": 581
+      },
+      "active": "跳过",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -548,
+          "bottom": -510.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 495.09375,
+          "bottom": 535.09375,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 495.09375,
+          "bottom": 535.09375,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 495.09375,
+          "bottom": 535.09375,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "small-keep-focus",
+    "data": {
+      "viewport": [
+        320,
+        568
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 556,
+        "clientHeight": 542,
+        "scrollHeight": 1123,
+        "scrollTop": 581
+      },
+      "active": "保留两者",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -548,
+          "bottom": -510.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 495.09375,
+          "bottom": 535.09375,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 495.09375,
+          "bottom": 535.09375,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 495.09375,
+          "bottom": 535.09375,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "small-keep-result",
+    "data": {
+      "active": "copy",
+      "files": 2,
+      "status": "已保留两者，副本已写入「项目资料」：2026年秋季品牌发布会_场地与视觉执行方案_华东区域团队确认版_2026-10-20（副本）.md"
+    }
+  },
+  {
+    "label": "narrow-error",
+    "data": {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "top": 12,
+        "bottom": 832,
+        "clientHeight": 818,
+        "scrollHeight": 1102,
+        "scrollTop": 264
+      },
+      "active": "保留两者",
+      "activeTag": "BUTTON",
+      "activeVisible": true,
+      "horizontalOverflow": false,
+      "buttons": [
+        {
+          "label": "取消复制",
+          "top": -231,
+          "bottom": -193.3125,
+          "visible": false,
+          "enabled": true
+        },
+        {
+          "label": "跳过",
+          "top": 790.765625,
+          "bottom": 830.765625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "替换",
+          "top": 790.765625,
+          "bottom": 830.765625,
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "label": "保留两者",
+          "top": 790.765625,
+          "bottom": 830.765625,
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "narrow-error-visibility",
+    "data": {
+      "top": 732.625,
+      "bottom": 774.765625,
+      "visible": true,
+      "text": "暂时无法写入，请重试。"
+    }
+  },
+  {
+    "label": "replace-result",
+    "data": {
+      "existingMatchesIncoming": true,
+      "existingUnchanged": false,
+      "files": 1,
+      "status": "已用传入文件替换「项目资料」中的同名文件。",
+      "active": "copy"
+    }
+  },
+  {
+    "label": "skip-result",
+    "data": {
+      "existingMatchesIncoming": false,
+      "existingUnchanged": true,
+      "files": 1,
+      "status": "已跳过此文件，现有文件未改动。",
+      "active": "copy"
+    }
+  }
+]

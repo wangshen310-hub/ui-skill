@@ -1,0 +1,73 @@
+{
+  "runtime": "Tencent Cloud / isolated Chrome / actual browser keyboard and touch emulation",
+  "checks": [
+    {
+      "label": "actual-enter-selects-article",
+      "data": {
+        "title": "巷子尽头的早餐",
+        "scroll": 0,
+        "maxScroll": 0,
+        "headingTop": 186,
+        "focusTag": "H1",
+        "focusId": "article-title"
+      }
+    },
+    {
+      "label": "following-tab",
+      "data": {
+        "title": "巷子尽头的早餐",
+        "scroll": 0,
+        "maxScroll": 0,
+        "headingTop": 186,
+        "focusTag": "BUTTON",
+        "focusId": "previous"
+      }
+    },
+    {
+      "label": "before-next-real-positive-scroll",
+      "data": {
+        "title": "在街角，慢下来",
+        "scroll": 195,
+        "maxScroll": 195,
+        "headingTop": -6,
+        "focusTag": "BODY",
+        "focusId": ""
+      }
+    },
+    {
+      "label": "after-next",
+      "data": {
+        "title": "巷子尽头的早餐",
+        "scroll": 0,
+        "maxScroll": 157,
+        "headingTop": 189,
+        "focusTag": "H1",
+        "focusId": "article-title"
+      }
+    },
+    {
+      "label": "content-and-metadata",
+      "data": [
+        {
+          "title": "在街角，慢下来",
+          "chars": 115,
+          "counter": "1 / 3",
+          "hasReadTime": false
+        },
+        {
+          "title": "巷子尽头的早餐",
+          "chars": 109,
+          "counter": "2 / 3",
+          "hasReadTime": false
+        },
+        {
+          "title": "让树木重回街道",
+          "chars": 97,
+          "counter": "3 / 3",
+          "hasReadTime": false
+        }
+      ]
+    }
+  ],
+  "passed": true
+}
