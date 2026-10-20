@@ -1,0 +1,102 @@
+[
+  {
+    "check": "font loaded",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "desktop title and real controls",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "desktop no horizontal overflow",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "images decoded",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "empty bookmarks state",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "bookmark click feedback",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "bookmark survives reload",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "article selection changes content",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "next navigation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "previous navigation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "route modal opens",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Escape closes and restores focus",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "keyboard bookmark activation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "long desktop title no overflow",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "mobile no horizontal overflow",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "mobile contents selection",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "mobile route modal reachable",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "mobile modal close",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "320px no horizontal overflow",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "no browser errors",
+    "passed": true,
+    "detail": ""
+  }
+]
