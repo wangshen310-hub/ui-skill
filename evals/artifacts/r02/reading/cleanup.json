@@ -1,0 +1,7 @@
+{
+  "pid": 1159703,
+  "expected_cwd": "/opt/ui-skill-lab-20261020/round-0002-reading/source",
+  "actual_cwd": "/opt/ui-skill-lab-20261020/round-0002-reading/source",
+  "sigterm_sent": true,
+  "port_18865_closed": true
+}

@@ -1,0 +1,98 @@
+{
+  "created_at_utc": "2026-10-20T22:33:19.992855+00:00",
+  "case": "r02-desktop-manual-repair",
+  "target_platform": "Native desktop app; manual repair after independent review",
+  "actual_runtime": "Qt Widgets / xcb / private Xvfb; real JPEG files; not fresh skill generation",
+  "declared_skill_revision": "a5eb2ab",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/a5eb2ab/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "33ecd48132a65fcde916c3712aaaf7734bee539b472ae87726fd4703edea6748",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "3e001aad3513592c4ecaf07635c712c638022f97f8087b0dbf794a750c968357",
+    "references/verification.md": "c3d49d834bb255923ef62362f59c4f7226a3fb3bda43b7536554910b44674fdd",
+    "references/writing.md": "3dd91eb7b6372d00cdf9ae39b18b82e735dd0bbc01ef0cc411c626669785f466",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "before",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/before-fix-B-one-exported-miscount.png",
+      "sha256": "55a1200d9e9c9b45e166855c75e1c8e1721b4ea5a360cffa141bac7c1899a9d1",
+      "bytes": 87611,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "before.png"
+    },
+    {
+      "label": "after",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/after-fix-B-one-exported.png",
+      "sha256": "c7f3fd9bd5cc77db96bf70dda0ebeb13d5e21b10407d5f7d37f27497e0bfa133",
+      "bytes": 93924,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "after.png"
+    },
+    {
+      "label": "minimum",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/after-fix-minimum-680x500.png",
+      "sha256": "c48744f6c98afbfc221913f5f2377bb78c0e636ba20a66f8993d402b1d8cfc72",
+      "bytes": 71427,
+      "png_size": {
+        "width": 680,
+        "height": 500
+      },
+      "stored_file": "minimum.png"
+    },
+    {
+      "label": "retry",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/after-fix-C-retry-success.png",
+      "sha256": "2af1d68cb46ba220362f04e0a411da60c36bb65fd5c01e0bce4b985dec0dc5de",
+      "bytes": 101037,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "retry.png"
+    },
+    {
+      "label": "before-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/before-fix-results.json",
+      "sha256": "fc358516d250109f960f6bf488ea3d55c312bdd2bc90324185cad221f960312c",
+      "bytes": 4946,
+      "stored_file": "before-checks.json"
+    },
+    {
+      "label": "after-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/after-fix-results.json",
+      "sha256": "59ad29787a4bf30c01273eed54fb69cfc63bb568a6ca61b988adb64af3fa1a18",
+      "bytes": 13983,
+      "stored_file": "after-checks.json"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/desktop-review-fix-source.zip",
+      "sha256": "b7f2a0acafc6596e2071b9597e65c8dce3f8058237ed5f63e94661343470d5ef",
+      "bytes": 16424,
+      "stored_file": "source.zip"
+    },
+    {
+      "label": "repair-report",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/REPORT.md",
+      "sha256": "34a1a196e394b59c50c722a9e7314453b8eb9956abe4b94c071b82357c422776",
+      "bytes": 4825,
+      "stored_file": "repair-report.md"
+    },
+    {
+      "label": "cleanup",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/process-cleanup.json",
+      "sha256": "e8f4e918c889170ede0ed37ded08dbfad79a7995b788221187e79b9be46f114f",
+      "bytes": 169,
+      "stored_file": "cleanup.json"
+    }
+  ]
+}

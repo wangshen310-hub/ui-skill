@@ -1,0 +1,137 @@
+{
+  "status": "reproduced",
+  "app_sha256": "011df53cf0c2e778690b05826435b5d0229e1fabffc70aec641b18a4b8996287",
+  "qpa": "xcb",
+  "display": ":0",
+  "window_exposed": true,
+  "logical_window": [
+    1100,
+    760
+  ],
+  "A": {
+    "files": [
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 45607,
+        "sha256": "7ed016cf628c9128af971ea31f3e498ee6bc30726172dfb98f912176bc31f545"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/山间湖泊_日出_004.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 21809,
+        "sha256": "93efd5bce424494ba5be6865219742971a076aa42bcad573d6ca6437f2ec5bc8"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/林间婚礼_精选_001.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 45013,
+        "sha256": "abf188f506fd2862796de72d9423441425e1834e326784493c9009e6d0f5bf3e"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/林间婚礼_精选_002.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 31070,
+        "sha256": "673cd91fbd8e19f22826a67ac91a1a8a6a485cd4a93a69a1e6aeaed104986591"
+      }
+    ],
+    "feedback": "已导出 4 张，文件已保存到输出目录。",
+    "entries": [
+      {
+        "name": "林间婚礼_精选_001.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/林间婚礼_精选_001.jpg"
+      },
+      {
+        "name": "林间婚礼_精选_002.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/林间婚礼_精选_002.jpg"
+      },
+      {
+        "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg"
+      },
+      {
+        "name": "山间湖泊_日出_004.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/山间湖泊_日出_004.jpg"
+      }
+    ]
+  },
+  "B": {
+    "files": [
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/B/林间婚礼_精选_001.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 45013,
+        "sha256": "abf188f506fd2862796de72d9423441425e1834e326784493c9009e6d0f5bf3e"
+      }
+    ],
+    "feedback": "已导出 4 张，文件已保存到输出目录。",
+    "entries": [
+      {
+        "name": "林间婚礼_精选_001.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/B/林间婚礼_精选_001.jpg"
+      },
+      {
+        "name": "林间婚礼_精选_002.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/林间婚礼_精选_002.jpg"
+      },
+      {
+        "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg"
+      },
+      {
+        "name": "山间湖泊_日出_004.jpg",
+        "state": "done",
+        "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/reproduction-data/A/山间湖泊_日出_004.jpg"
+      }
+    ],
+    "checked_count": 1
+  },
+  "history_done_miscount_reproduced": true,
+  "remove_label_and_behavior": {
+    "button_text": "移除",
+    "checked_count": 4,
+    "current_row_name": "林间婚礼_精选_002.jpg",
+    "before": [
+      "林间婚礼_精选_001.jpg",
+      "林间婚礼_精选_002.jpg",
+      "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+      "山间湖泊_日出_004.jpg"
+    ],
+    "after": [
+      "林间婚礼_精选_001.jpg",
+      "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+      "山间湖泊_日出_004.jpg"
+    ],
+    "removed": [
+      "林间婚礼_精选_002.jpg"
+    ],
+    "source_files_preserved": true
+  }
+}

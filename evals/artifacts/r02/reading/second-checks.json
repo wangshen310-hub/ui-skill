@@ -1,0 +1,181 @@
+{
+  "skill_version": "01b2ad2",
+  "environment": {
+    "host": "tencent-opencloudos",
+    "node": "v20.20.2",
+    "browser": "/usr/bin/google-chrome",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36"
+  },
+  "checks": [
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "desktop 1440x1000 no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 1440,
+        "scroll": 1440,
+        "font": "\"Noto Serif SC\", \"Songti SC\", SimSun, serif",
+        "fontSize": "22px",
+        "fontReady": true
+      }
+    },
+    {
+      "name": "desktop 1440x1000 local Chinese serif loaded",
+      "passed": true
+    },
+    {
+      "name": "first article previous disabled",
+      "passed": true
+    },
+    {
+      "name": "Tab enters skip link",
+      "passed": true
+    },
+    {
+      "name": "skip link reaches article",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches next article",
+      "passed": true
+    },
+    {
+      "name": "Shift Tab reaches bookmark",
+      "passed": true
+    },
+    {
+      "name": "keyboard focus has visible outline",
+      "passed": true
+    },
+    {
+      "name": "Space bookmarks with retained focus",
+      "passed": true
+    },
+    {
+      "name": "B cancels bookmark",
+      "passed": true
+    },
+    {
+      "name": "help opens with focus inside",
+      "passed": true
+    },
+    {
+      "name": "help Tab stays in dialog",
+      "passed": true
+    },
+    {
+      "name": "help Escape restores opener",
+      "passed": true
+    },
+    {
+      "name": "full article 2",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "TOC active item matches article",
+      "passed": true
+    },
+    {
+      "name": "full article 3",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "last article next disabled",
+      "passed": true
+    },
+    {
+      "name": "full article 3",
+      "passed": true
+    },
+    {
+      "name": "full article 2",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "bookmark persists through reload",
+      "passed": true
+    },
+    {
+      "name": "saved filter contains one saved essay",
+      "passed": true
+    },
+    {
+      "name": "filter selection retains focus",
+      "passed": true
+    },
+    {
+      "name": "empty saved state appears",
+      "passed": true
+    },
+    {
+      "name": "removed list item restores focus to filter",
+      "passed": true
+    },
+    {
+      "name": "tab arrow switches filter and retains tab focus",
+      "passed": true
+    },
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "history restores article start",
+      "passed": true
+    },
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "mobile 390x844 no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "scroll": 390,
+        "font": "\"Noto Serif SC\", \"Songti SC\", SimSun, serif",
+        "fontSize": "18px",
+        "fontReady": true
+      }
+    },
+    {
+      "name": "mobile 390x844 local Chinese serif loaded",
+      "passed": true
+    },
+    {
+      "name": "mobile directory opens with dialog semantics",
+      "passed": false
+    }
+  ],
+  "browser_errors": [],
+  "screenshots": [
+    "initial-desktop.png",
+    "keyboard-focus.png",
+    "saved-desktop.png",
+    "empty-saved-desktop.png",
+    "desktop.png",
+    "mobile.png",
+    "mobile-full.png"
+  ],
+  "passed": false,
+  "failure": "AssertionError('mobile directory opens with dialog semantics')"
+}

@@ -1,0 +1,352 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "whole batch A reports only this batch and exact directory",
+      "result": "passed",
+      "files": [
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "bytes": 45607,
+          "sha256": "7ed016cf628c9128af971ea31f3e498ee6bc30726172dfb98f912176bc31f545"
+        },
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "bytes": 21809,
+          "sha256": "93efd5bce424494ba5be6865219742971a076aa42bcad573d6ca6437f2ec5bc8"
+        },
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_001.jpg",
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "bytes": 45013,
+          "sha256": "abf188f506fd2862796de72d9423441425e1834e326784493c9009e6d0f5bf3e"
+        },
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_002.jpg",
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "bytes": 31070,
+          "sha256": "673cd91fbd8e19f22826a67ac91a1a8a6a485cd4a93a69a1e6aeaed104986591"
+        }
+      ],
+      "feedback": "本次已导出 4 张。输出目录：/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A",
+      "queue": [
+        {
+          "name": "林间婚礼_精选_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "林间婚礼_精选_002.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_002.jpg",
+          "detail": ""
+        },
+        {
+          "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "山间湖泊_日出_004.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "check": "A history does not inflate one-image export to B; historical row paths remain A",
+      "result": "passed",
+      "files": [
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_001.jpg",
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "bytes": 45013,
+          "sha256": "abf188f506fd2862796de72d9423441425e1834e326784493c9009e6d0f5bf3e"
+        }
+      ],
+      "feedback": "本次已导出 1 张。输出目录：/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B",
+      "queue": [
+        {
+          "name": "林间婚礼_精选_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "林间婚礼_精选_002.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_002.jpg",
+          "detail": ""
+        },
+        {
+          "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "山间湖泊_日出_004.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+          "detail": ""
+        }
+      ],
+      "A_files_unchanged": true
+    },
+    {
+      "check": "one actual corrupt source reports zero current successes and one failure despite four historical done rows",
+      "result": "passed",
+      "feedback": "本次已导出 0 张；1 张失败，修复文件或目录后可重试。输出目录：/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/C",
+      "queue": [
+        {
+          "name": "林间婚礼_精选_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "林间婚礼_精选_002.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_002.jpg",
+          "detail": ""
+        },
+        {
+          "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "山间湖泊_日出_004.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+          "detail": ""
+        },
+        {
+          "name": "修复重试_样例图片.jpg",
+          "state": "failed",
+          "output": "",
+          "detail": "无法读取图片；修复原文件后可重试"
+        }
+      ]
+    },
+    {
+      "check": "unrelated historical failure remains in queue but is not counted in successful current batch",
+      "result": "passed",
+      "feedback": "本次已导出 1 张。输出目录：/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B",
+      "queue": [
+        {
+          "name": "林间婚礼_精选_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "林间婚礼_精选_002.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_002.jpg",
+          "detail": ""
+        },
+        {
+          "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "山间湖泊_日出_004.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+          "detail": ""
+        },
+        {
+          "name": "修复重试_样例图片.jpg",
+          "state": "failed",
+          "output": "",
+          "detail": "无法读取图片；修复原文件后可重试"
+        }
+      ]
+    },
+    {
+      "check": "Ctrl+R retries only the repaired failed item; reports one current output to C; previous output hashes unchanged",
+      "result": "passed",
+      "files": [
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/C/修复重试_样例图片.jpg",
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "bytes": 26721,
+          "sha256": "3026b1444c4dcffa83a4fa63cadf3ccdf3a0974ea412d199916f34f55aae3563"
+        }
+      ],
+      "feedback": "本次已导出 1 张。输出目录：/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/C",
+      "queue": [
+        {
+          "name": "林间婚礼_精选_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "林间婚礼_精选_002.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_002.jpg",
+          "detail": ""
+        },
+        {
+          "name": "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+          "detail": ""
+        },
+        {
+          "name": "山间湖泊_日出_004.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+          "detail": ""
+        },
+        {
+          "name": "修复重试_样例图片.jpg",
+          "state": "done",
+          "output": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/C/修复重试_样例图片.jpg",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "check": "explicit remove-current-row label matches action while five rows are checked",
+      "result": "passed",
+      "button_text": "移除此行",
+      "checked_before": 5,
+      "removed": [
+        "林间婚礼_精选_002.jpg"
+      ],
+      "retained": [
+        "林间婚礼_精选_001.jpg",
+        "城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+        "山间湖泊_日出_004.jpg",
+        "修复重试_样例图片.jpg"
+      ],
+      "source_files_preserved": true
+    },
+    {
+      "check": "updated label and directory-specific feedback leave main controls reachable at 680x500",
+      "result": "passed"
+    }
+  ],
+  "app_sha256": "4fbb4c8cf72d4d94b45b3742a8874e07dd3027faf5e229b4a75a9fcca66b6014",
+  "qpa": "xcb",
+  "display": ":0",
+  "window_exposed": true,
+  "real_outputs": {
+    "A": [
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/城市建筑外景_秋季作品集_交付客户最终确认版本_001.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 45607,
+        "sha256": "7ed016cf628c9128af971ea31f3e498ee6bc30726172dfb98f912176bc31f545"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/山间湖泊_日出_004.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 21809,
+        "sha256": "93efd5bce424494ba5be6865219742971a076aa42bcad573d6ca6437f2ec5bc8"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_001.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 45013,
+        "sha256": "abf188f506fd2862796de72d9423441425e1834e326784493c9009e6d0f5bf3e"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/A/林间婚礼_精选_002.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 31070,
+        "sha256": "673cd91fbd8e19f22826a67ac91a1a8a6a485cd4a93a69a1e6aeaed104986591"
+      }
+    ],
+    "B": [
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_001.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 45013,
+        "sha256": "abf188f506fd2862796de72d9423441425e1834e326784493c9009e6d0f5bf3e"
+      },
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/B/林间婚礼_精选_002.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 31070,
+        "sha256": "673cd91fbd8e19f22826a67ac91a1a8a6a485cd4a93a69a1e6aeaed104986591"
+      }
+    ],
+    "C": [
+      {
+        "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/review-fix/verification-data/C/修复重试_样例图片.jpg",
+        "format": "JPEG",
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 26721,
+        "sha256": "3026b1444c4dcffa83a4fa63cadf3ccdf3a0974ea412d199916f34f55aae3563"
+      }
+    ]
+  },
+  "scope": "case code repair; this does not prove a skill improvement",
+  "limits": [
+    "No window manager; application focus explicitly activated for shortcut tests.",
+    "Not a repeat of the original entire platform matrix; only listed regressions exercised."
+  ]
+}

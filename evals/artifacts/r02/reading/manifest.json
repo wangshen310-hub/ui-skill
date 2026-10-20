@@ -1,0 +1,141 @@
+{
+  "created_at_utc": "2026-10-20T22:33:19.946594+00:00",
+  "case": "r02-reading",
+  "target_platform": "Responsive reading website",
+  "actual_runtime": "Chrome 151 / Linux; desktop and touch-emulated mobile browser",
+  "declared_skill_revision": "01b2ad2",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/01b2ad2/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "c7d8512397ec1422d3646fb059b0b88f2de1a54b6627bc7f07282db3eb6525f4",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "5cb65de9e146bd8692c4d559aa8c656bbef3d096485779675c7b757f9a1afe18",
+    "references/verification.md": "d8bb4725990288edaddf81c56a0dc72acb1ac9b380958245f84df936d42b36b2",
+    "references/writing.md": "a7ab0fa05982bb195959acffaa001acef9b3ef1caf72f581b11e5af8c6cfcbd2",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "reference",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/reference/desktop-reference.png",
+      "sha256": "ff914388451b694bdbd5c8fdf76042152af02c3df8c4d61ca06331bb38e41739",
+      "bytes": 1364930,
+      "png_size": {
+        "width": 1505,
+        "height": 1045
+      },
+      "stored_file": "reference.png"
+    },
+    {
+      "label": "initial",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/snapshots/initial-desktop.png",
+      "sha256": "05319ff2dd75385eb8776931b47c413f1786eb9fe2686c705fdb8abf3bec3e80",
+      "bytes": 92916,
+      "png_size": {
+        "width": 1440,
+        "height": 1000
+      },
+      "stored_file": "initial.png"
+    },
+    {
+      "label": "desktop",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/desktop.png",
+      "sha256": "65c3e3e5a109c7ce4cdfee5e5f8d1f56a3fe405630f09c76c08e72dbfb39f585",
+      "bytes": 103450,
+      "png_size": {
+        "width": 1440,
+        "height": 1000
+      },
+      "stored_file": "desktop.png"
+    },
+    {
+      "label": "phone",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/mobile.png",
+      "sha256": "ac5d5719197a96be7233ca3fc25d3f013bfdd25db7c680872d800b6288d2cad9",
+      "bytes": 54822,
+      "png_size": {
+        "width": 390,
+        "height": 844
+      },
+      "stored_file": "phone.png"
+    },
+    {
+      "label": "directory",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/mobile-directory.png",
+      "sha256": "59e3f5c45cae1ed3c67cc8345a645a9ad489eff4d605e853dbd19f9d992afee4",
+      "bytes": 27472,
+      "png_size": {
+        "width": 390,
+        "height": 844
+      },
+      "stored_file": "directory.png"
+    },
+    {
+      "label": "narrow",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/mobile-320.png",
+      "sha256": "86e7d018a2a533e057bf33a1fec0089f72f9372b3b5ba45a20e1ee25b729060f",
+      "bytes": 54208,
+      "png_size": {
+        "width": 320,
+        "height": 832
+      },
+      "stored_file": "narrow.png"
+    },
+    {
+      "label": "checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/acceptance-results.json",
+      "sha256": "a9f7cfa58903f61d17f5ea7848690479e879f4102d9ea8a902b7a7db9f1d9b73",
+      "bytes": 5799,
+      "stored_file": "checks.json"
+    },
+    {
+      "label": "initial-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/initial-acceptance-results.json",
+      "sha256": "db2b1ffc11b367d4c550a76cdca6c76b7824b4b82986c0e2dfe88b58ee5f0492",
+      "bytes": 1719,
+      "stored_file": "initial-checks.json"
+    },
+    {
+      "label": "second-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/second-acceptance-results.json",
+      "sha256": "1569d55a9853fb6beb530a7a4e7029d8b395592ef3198ab5ea034e12e229e255",
+      "bytes": 3900,
+      "stored_file": "second-checks.json"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/snapshots/final-source.tar.gz",
+      "sha256": "1c39256026e9e1c91adc8c3a4bbeeffa65d84cdccd7adc0c91b4ee6f06e85788",
+      "bytes": 9358,
+      "stored_file": "source.gz"
+    },
+    {
+      "label": "initial-source",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/snapshots/initial-runnable-source.tar.gz",
+      "sha256": "b44158542b585c97da7e6bf966a3328230d34e421c529777b3b5d10d8e945f26",
+      "bytes": 9210,
+      "stored_file": "initial-source.gz"
+    },
+    {
+      "label": "creator-report",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/README.md",
+      "sha256": "09482480b31f3a263b7bb7200159f134afe2909f535f4ba02fc33d439759c094",
+      "bytes": 4191,
+      "stored_file": "creator-report.md"
+    },
+    {
+      "label": "commands",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/COMMANDS.md",
+      "sha256": "933f63057a3c45c1d8305f2d0178001545bc46e8a438813d6b242a87a9fea8d2",
+      "bytes": 2327,
+      "stored_file": "commands.md"
+    },
+    {
+      "label": "cleanup",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-reading/evidence/shutdown.json",
+      "sha256": "d7167154ece0b5aa2db643847b39e7e6dbad298c13ffdc723a4d8a5421ad55a9",
+      "bytes": 219,
+      "stored_file": "cleanup.json"
+    }
+  ]
+}
