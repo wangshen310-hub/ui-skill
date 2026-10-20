@@ -1,0 +1,103 @@
+[
+  {
+    "check": "environment",
+    "hostname": "VM-0-17-opencloudos",
+    "python": "/opt/ui-skill-lab-20261020/round-0002-desktop/.venv/bin/python",
+    "pyside": "6.12.0",
+    "display": ":0",
+    "platform": "xcb",
+    "font": "Noto Sans CJK SC",
+    "size": [
+      1180,
+      780
+    ],
+    "app_sha256": "297397a58c73f1943b08bb1a9e193b57768abb095a6b1dcd5d37919dac0bef22"
+  },
+  {
+    "check": "open-list-with-keyboard",
+    "count": 3,
+    "selected": "riverside-portrait",
+    "focus": "titleEdit"
+  },
+  {
+    "check": "ctrl-s-real-file-save",
+    "file": "/opt/ui-skill-lab-20261020/round-0004-drafts/verification-data/projects.json",
+    "title": "秋季人像 · 河岸外景（已确认机位）",
+    "notes": "集合地点：滨河公园南门。\n下午四点先拍芦苇区逆光，太阳落下前转到桥边。\n服装：米色针织衫、深色长裤。带一块白色反光板。\n给林女士补拍一张横版全身照。\n补充：桥边先拍横幅，反光板由小陈协助。",
+    "status": "已保存到本机 · 07:17",
+    "saved_at": "2026-10-21T07:17:15+08:00"
+  },
+  {
+    "check": "return-reopen-focus",
+    "selection": 0,
+    "saved_values_restored": true,
+    "shift_tab_focus": "primary"
+  },
+  {
+    "check": "narrow-long-editor",
+    "size": [
+      680,
+      520
+    ],
+    "notes_lines": 90,
+    "title_chars": 129,
+    "geometry": {
+      "quiet": {
+        "visible": true,
+        "size": [
+          134,
+          46
+        ],
+        "inside_window": true
+      },
+      "primary": {
+        "visible": true,
+        "size": [
+          159,
+          46
+        ],
+        "inside_window": true
+      },
+      "titleEdit": {
+        "visible": true,
+        "size": [
+          632,
+          65
+        ],
+        "inside_window": true
+      },
+      "notesEdit": {
+        "visible": true,
+        "size": [
+          632,
+          167
+        ],
+        "inside_window": true
+      },
+      "saveState": {
+        "visible": true,
+        "size": [
+          632,
+          21
+        ],
+        "inside_window": true
+      }
+    }
+  },
+  {
+    "check": "unsaved-return-continue",
+    "title": "有未保存的修改",
+    "message": "返回清单前保存草稿？",
+    "buttons": [
+      "保存并返回",
+      "继续编辑",
+      "放弃修改"
+    ],
+    "default": "继续编辑",
+    "escape": "继续编辑"
+  },
+  {
+    "check": "FAILED",
+    "traceback": "Traceback (most recent call last):\n  File \"/opt/ui-skill-lab-20261020/round-0004-drafts/verify.py\", line 286, in <module>\n    run()\n  File \"/opt/ui-skill-lab-20261020/round-0004-drafts/verify.py\", line 176, in run\n    assert window.stack.currentWidget() is window.list_page and APP.focusWidget() is window.project_list\n                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+]

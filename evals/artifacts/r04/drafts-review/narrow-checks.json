@@ -1,0 +1,77 @@
+[
+  {
+    "name": "10-own-cursor-after-failure",
+    "cursor": [
+      114,
+      54,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      28
+    ],
+    "cursor_fully_visible": false,
+    "cursor_intersects_viewport": false,
+    "scroll_value": 69,
+    "scroll_max": 72,
+    "notes_height": 60,
+    "window": [
+      640,
+      480
+    ],
+    "at_end": true
+  },
+  {
+    "name": "11-own-cursor-after-ctrl-end",
+    "cursor": [
+      114,
+      0,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      28
+    ],
+    "cursor_fully_visible": true,
+    "cursor_intersects_viewport": true,
+    "scroll_value": 71,
+    "scroll_max": 72,
+    "notes_height": 60,
+    "window": [
+      640,
+      480
+    ],
+    "at_end": true
+  },
+  {
+    "name": "12-own-cursor-after-typing",
+    "cursor": [
+      124,
+      0,
+      1,
+      27
+    ],
+    "viewport": [
+      0,
+      0,
+      548,
+      28
+    ],
+    "cursor_fully_visible": true,
+    "cursor_intersects_viewport": true,
+    "scroll_value": 71,
+    "scroll_max": 72,
+    "notes_height": 60,
+    "window": [
+      640,
+      480
+    ],
+    "at_end": true
+  }
+]

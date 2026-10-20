@@ -1,0 +1,2749 @@
+{
+  "measurement": "font_px is requested font size in native window pixels; ink_rect_px is actual rendered alpha bounding box before direct unscaled blit",
+  "frames": [
+    {
+      "label": "initial-pause-1440",
+      "png": "evidence/readability-r4/after-frame-metadata/01-paused-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "f6c505aad860e9014d25603dfd10657ff3f6058e928dcf841e5bd4196147e45b",
+      "capture_event_time": 1792538520.520296,
+      "screen": "paused",
+      "input_mode": "keyboard",
+      "native_window": 2097160,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            46,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            845,
+            26,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            116,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            190,
+            835,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            200,
+            845,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            262,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            336,
+            835,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            346,
+            845,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "继续",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            391,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            1315,
+            38,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            1283,
+            38,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        }
+      ]
+    },
+    {
+      "label": "controller-pause-1440",
+      "png": "evidence/readability-r4/after-frame-metadata/02-paused-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "5bdec7175d418ae8d3dcde7af222a70b7d6c3d45c02dc9d79937bcd4f0d096a9",
+      "capture_event_time": 1792538520.9459295,
+      "screen": "paused",
+      "input_mode": "controller",
+      "native_window": 2097160,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            66,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "D-pad",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            844,
+            46,
+            15
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            136,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            210,
+            835,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "A",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            220,
+            845,
+            11,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            252,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            326,
+            835,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "B",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            338,
+            845,
+            9,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "继续",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            368,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            1315,
+            38,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            1283,
+            38,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        }
+      ]
+    },
+    {
+      "label": "flight-moving",
+      "png": "evidence/readability-r4/after-frame-metadata/03-flight-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "8e9487981d0a3f2e1b882d046fb9214a0fbadb6931c7c41dd8ccb7563fb1693e",
+      "capture_event_time": 1792538522.8401232,
+      "screen": "flight",
+      "input_mode": "keyboard",
+      "native_window": 2097160,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            845,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "暂停",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            115,
+            842,
+            35,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行中",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            1351,
+            38,
+            53,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "settings-changed-1440",
+      "png": "evidence/readability-r4/after-frame-metadata/04-settings-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "fd6e4e9147c414390220f05ac16bb129277b27f1f9c220ab3acb5bb48486d8af",
+      "capture_event_time": 1792538525.0940611,
+      "screen": "settings",
+      "input_mode": "keyboard",
+      "native_window": 2097160,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            94,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓ / ← →",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            844,
+            74,
+            13
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择 / 调整",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            164,
+            842,
+            87,
+            19
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            289,
+            835,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            299,
+            845,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            361,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            435,
+            835,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            445,
+            845,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "返回",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            490,
+            842,
+            35,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            1315,
+            38,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            1283,
+            38,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "save_notice",
+          "text": "已保存到此设备",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            140,
+            718,
+            125,
+            18
+          ],
+          "color": [
+            192,
+            233,
+            221
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "controller-settings-saved-1440",
+      "png": "evidence/readability-r4/after-frame-metadata/05-settings-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "a9132784a6f9acf8827e2c3b2c476b2ca510b132d5a215e3c37c2d857e026273",
+      "capture_event_time": 1792538525.4876153,
+      "screen": "settings",
+      "input_mode": "controller",
+      "native_window": 2097160,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            66,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "D-pad",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            844,
+            46,
+            15
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择 / 调整",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            136,
+            842,
+            87,
+            19
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            261,
+            835,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "A",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            272,
+            845,
+            11,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            303,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            377,
+            835,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "B",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            388,
+            845,
+            9,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "返回",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            419,
+            842,
+            35,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            1315,
+            38,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            1283,
+            38,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "save_notice",
+          "text": "已保存到此设备",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            140,
+            718,
+            125,
+            18
+          ],
+          "color": [
+            192,
+            233,
+            221
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "title-1440",
+      "png": "evidence/readability-r4/after-frame-metadata/06-title-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "82a99256181f6282f9d0c8f4d15c0ad11a51e7abad2ab708ff9b943c682961b2",
+      "capture_event_time": 1792538526.7043347,
+      "screen": "title",
+      "input_mode": "keyboard",
+      "native_window": 2097160,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            46,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            845,
+            26,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            116,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            190,
+            835,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            200,
+            845,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            262,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "pause-1024",
+      "png": "evidence/readability-r4/after-frame-metadata/07-paused-1024x640.png",
+      "png_dimensions_px": [
+        1024,
+        640
+      ],
+      "png_sha256": "6b32a35dbe42d376266555c8b8b5df4f379621e893b335b8b7143dcc7a1e272d",
+      "capture_event_time": 1792538527.3487723,
+      "screen": "paused",
+      "input_mode": "keyboard",
+      "native_window": 2097171,
+      "window_px": [
+        1024,
+        640
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1024,
+        640
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            43,
+            584,
+            46,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            53,
+            594,
+            26,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            99,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            163,
+            584,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            173,
+            594,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            235,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            299,
+            584,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            309,
+            594,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "继续",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            354,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            909,
+            27,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            877,
+            27,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        }
+      ]
+    },
+    {
+      "label": "controller-pause-1024",
+      "png": "evidence/readability-r4/after-frame-metadata/08-paused-1024x640.png",
+      "png_dimensions_px": [
+        1024,
+        640
+      ],
+      "png_sha256": "80ba1c42734cb752fad0a5683c326e87aa42e401c91f8ef8a758de4cbd617c82",
+      "capture_event_time": 1792538527.7466352,
+      "screen": "paused",
+      "input_mode": "controller",
+      "native_window": 2097171,
+      "window_px": [
+        1024,
+        640
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1024,
+        640
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            43,
+            584,
+            66,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "D-pad",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            53,
+            592,
+            46,
+            15
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            119,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            183,
+            584,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "A",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            194,
+            594,
+            11,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            225,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            289,
+            584,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "B",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            300,
+            594,
+            9,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "继续",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            331,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            909,
+            27,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            877,
+            27,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        }
+      ]
+    },
+    {
+      "label": "controller-settings-1024",
+      "png": "evidence/readability-r4/after-frame-metadata/09-settings-1024x640.png",
+      "png_dimensions_px": [
+        1024,
+        640
+      ],
+      "png_sha256": "15d2faa090d9f4374cd1782a3fadc8c7735f74da5c4f66eb074d399ce5c59304",
+      "capture_event_time": 1792538528.6708949,
+      "screen": "settings",
+      "input_mode": "controller",
+      "native_window": 2097171,
+      "window_px": [
+        1024,
+        640
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1024,
+        640
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            43,
+            584,
+            66,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "D-pad",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            53,
+            592,
+            46,
+            15
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择 / 调整",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            119,
+            590,
+            87,
+            19
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            234,
+            584,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "A",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            244,
+            594,
+            11,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            276,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            340,
+            584,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "B",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            352,
+            594,
+            9,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "返回",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            382,
+            591,
+            35,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            909,
+            27,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            877,
+            27,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "save_notice",
+          "text": "已保存到此设备",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            100,
+            511,
+            125,
+            18
+          ],
+          "color": [
+            192,
+            233,
+            221
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "controller-title-1024",
+      "png": "evidence/readability-r4/after-frame-metadata/10-title-1024x640.png",
+      "png_dimensions_px": [
+        1024,
+        640
+      ],
+      "png_sha256": "2c4610c64b990da21ebefdc83c4763286b4966973a15af0bdbc2dc2eab527b81",
+      "capture_event_time": 1792538529.395522,
+      "screen": "title",
+      "input_mode": "controller",
+      "native_window": 2097171,
+      "window_px": [
+        1024,
+        640
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1024,
+        640
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            43,
+            584,
+            66,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "D-pad",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            53,
+            592,
+            46,
+            15
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            119,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            183,
+            584,
+            32,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "A",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            194,
+            594,
+            11,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            225,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "settings-final-1024",
+      "png": "evidence/readability-r4/after-frame-metadata/11-settings-1024x640.png",
+      "png_dimensions_px": [
+        1024,
+        640
+      ],
+      "png_sha256": "3d86a00065ed814fb967001f4e807073fab23389816830669741c16503b826ba",
+      "capture_event_time": 1792538530.913883,
+      "screen": "settings",
+      "input_mode": "keyboard",
+      "native_window": 2097171,
+      "window_px": [
+        1024,
+        640
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1024,
+        640
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            43,
+            584,
+            94,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓ / ← →",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            53,
+            594,
+            74,
+            13
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择 / 调整",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            147,
+            590,
+            87,
+            19
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            262,
+            584,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            272,
+            594,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            334,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            398,
+            584,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            408,
+            594,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "返回",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            453,
+            591,
+            35,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            909,
+            27,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            877,
+            27,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "save_notice",
+          "text": "已保存到此设备",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            100,
+            511,
+            125,
+            18
+          ],
+          "color": [
+            192,
+            233,
+            221
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        }
+      ]
+    },
+    {
+      "label": "pause-final-1024",
+      "png": "evidence/readability-r4/after-frame-metadata/12-paused-1024x640.png",
+      "png_dimensions_px": [
+        1024,
+        640
+      ],
+      "png_sha256": "781f110048873bc2dbdba60515ec7bcf491729dafbc0676588ca4587838cb905",
+      "capture_event_time": 1792538531.5383754,
+      "screen": "paused",
+      "input_mode": "keyboard",
+      "native_window": 2097171,
+      "window_px": [
+        1024,
+        640
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1024,
+        640
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            43,
+            584,
+            46,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            53,
+            594,
+            26,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            99,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            163,
+            584,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            173,
+            594,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            235,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            299,
+            584,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            309,
+            594,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "继续",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            354,
+            591,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            909,
+            27,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            877,
+            27,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        }
+      ]
+    },
+    {
+      "label": "pause-final-1440",
+      "png": "evidence/readability-r4/after-frame-metadata/13-paused-1440x900.png",
+      "png_dimensions_px": [
+        1440,
+        900
+      ],
+      "png_sha256": "f643ef96f66a6cadef05f38a854eb8776d7ac0c3ab5b08202757a33d0d37cded",
+      "capture_event_time": 1792538532.0698938,
+      "screen": "paused",
+      "input_mode": "keyboard",
+      "native_window": 2097182,
+      "window_px": [
+        1440,
+        900
+      ],
+      "render_space": "native_window_pixels",
+      "ui_window_px": [
+        1440,
+        900
+      ],
+      "matching_frame_dimensions": true,
+      "items": [
+        {
+          "role": "keycap",
+          "rect_px": [
+            60,
+            835,
+            46,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "↑ ↓",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            70,
+            845,
+            26,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "选择",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            116,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            190,
+            835,
+            62,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Enter",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            200,
+            845,
+            42,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "确认",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            262,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "keycap",
+          "rect_px": [
+            336,
+            835,
+            45,
+            32
+          ],
+          "border_color": [
+            119,
+            150,
+            162
+          ],
+          "fill_color": [
+            7,
+            16,
+            25
+          ]
+        },
+        {
+          "role": "keycap_label",
+          "text": "Esc",
+          "font_px": 16,
+          "font_line_height_px": 19,
+          "ink_rect_px": [
+            346,
+            845,
+            25,
+            12
+          ],
+          "color": [
+            209,
+            223,
+            226
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        },
+        {
+          "role": "hint_label",
+          "text": "继续",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            391,
+            842,
+            36,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status",
+          "text": "航行已冻结",
+          "font_px": 18,
+          "font_line_height_px": 27,
+          "ink_rect_px": [
+            1315,
+            38,
+            89,
+            18
+          ],
+          "color": [
+            190,
+            205,
+            211
+          ],
+          "font_path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf"
+        },
+        {
+          "role": "status_icon",
+          "text": "Ⅱ",
+          "font_px": 22,
+          "font_line_height_px": 26,
+          "ink_rect_px": [
+            1283,
+            38,
+            7,
+            16
+          ],
+          "color": [
+            229,
+            237,
+            234
+          ],
+          "font_path": "/usr/share/fonts/dejavu/DejaVuSans.ttf"
+        }
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "path": "/usr/share/fonts/dejavu/DejaVuSans.ttf",
+      "sha256": "f9a7bd58cdaa9d1e9acafd070db8dea0b6db9cf2b540501b15075315a47cba3d",
+      "bytes": 759720
+    },
+    {
+      "path": "/usr/share/fonts/google-noto-cjk/NotoSansCJKsc-Medium.otf",
+      "sha256": "836e531d5d0d557a8b83ed2ec102569b314ddb92d2f6b6423d3055afc05daeb6",
+      "bytes": 17022236
+    }
+  ],
+  "nominal_contrast_against_scene_base": {
+    "scene_base_rgb": [
+      7,
+      16,
+      25
+    ],
+    "before_hint_status_rgb": [
+      151,
+      166,
+      176
+    ],
+    "before_hint_status_ratio": 7.653,
+    "after_hint_status_rgb": [
+      190,
+      205,
+      211
+    ],
+    "after_hint_status_ratio": 11.723,
+    "after_keycap_label_rgb": [
+      209,
+      223,
+      226
+    ],
+    "after_keycap_label_ratio": 14.003,
+    "save_notice_rgb": [
+      192,
+      233,
+      221
+    ],
+    "save_notice_ratio": 14.529,
+    "limitation": "Nominal solid colors only; this is not a claim about every antialiased edge or background pixel."
+  }
+}

@@ -1,0 +1,15 @@
+{"check": "independent-process-reload", "pid": 1264425, "file": "/opt/ui-skill-lab-20261020/round-0004-drafts/verification-data/projects.json", "title": "秋季人像 · 河岸外景（已确认机位）", "notes": "集合地点：滨河公园南门。\n下午四点先拍芦苇区逆光，太阳落下前转到桥边。\n服装：米色针织衫、深色长裤。带一块白色反光板。\n给林女士补拍一张横版全身照。\n补充：桥边先拍横幅，反光板由小陈协助。\n写入失败时这段备注仍应保留。", "sha256": "292b377113bc1bdb395966fd61b4467f8f19f1ce6dcd38297049c63e0bebc187"}
+{"check": "tab-space-open-second-project", "title": "陶器上新 · 白底静物", "focus": "titleEdit"}
+{"check": "escape-cancels-unsaved-return", "default": "继续编辑", "input_preserved": true}
+{"check": "enter-default-keeps-editing", "default": "继续编辑", "window_open": true}
+Traceback (most recent call last):
+  File "/opt/ui-skill-lab-20261020/round-0004-drafts/verify_restart_keyboard.py", line 50, in respond
+    assert isinstance(dialog, QMessageBox)
+AssertionError
+Traceback (most recent call last):
+  File "/opt/ui-skill-lab-20261020/round-0004-drafts/verify_restart_keyboard.py", line 103, in <module>
+    selected = choose_button(lambda: QTest.keyClick(window.title_edit, Qt.Key.Key_Left, Qt.KeyboardModifier.AltModifier), "saveAndLeave")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ui-skill-lab-20261020/round-0004-drafts/verify_restart_keyboard.py", line 57, in choose_button
+    assert found
+AssertionError

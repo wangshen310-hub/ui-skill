@@ -1,0 +1,112 @@
+{
+  "created_at_utc": "2026-10-20T23:28:06.537008+00:00",
+  "case": "r04-game-readability-repair",
+  "target_platform": "pygame-game",
+  "actual_runtime": "Pygame2.6.1 SDL/x11 privateXvfb; real keyboard/window; synthetic controller",
+  "declared_skill_revision": "856ebb6 original generation; R4 manual case repair",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/856ebb6/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "c7d8512397ec1422d3646fb059b0b88f2de1a54b6627bc7f07282db3eb6525f4",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "5cb65de9e146bd8692c4d559aa8c656bbef3d096485779675c7b757f9a1afe18",
+    "references/verification.md": "5c7e4ea8d8399eb327f99e691b1efd8a544bd0be1ded92079256895fa123b473",
+    "references/writing.md": "0c42752fc541f1d9f2ea33a1e1e201bf6c0390e68e5c624eaa1bc3dcd0aedc4d",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "report",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/REPORT.txt",
+      "sha256": "b8e441500f36a167b2fbd7266983a48fb3f94ac04ae08159b82635bda10a9218",
+      "bytes": 5729,
+      "stored_file": "report.txt"
+    },
+    {
+      "label": "typography",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/typography-and-layout.json",
+      "sha256": "942f6266da931ddfa093651e55d7377de0c2c7f5d1a99a1b2291e25d5914e22a",
+      "bytes": 59734,
+      "stored_file": "typography.json"
+    },
+    {
+      "label": "summary",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/runtime-summary.json",
+      "sha256": "4fae9ce88316aeef2f8319653ef46080b347fc9e166351af5b060e9f539dad70",
+      "bytes": 950,
+      "stored_file": "summary.json"
+    },
+    {
+      "label": "checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/after-frame-metadata/results.json",
+      "sha256": "7d1b9b09cd2b75b4cfb690632ead983f97abd546a47d0db9730c3d89ce67b8b7",
+      "bytes": 196875,
+      "stored_file": "checks.json"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/readability-r4-source.tar.gz",
+      "sha256": "11a29882ab43a5a04f12d2b31a10b862bfdaad8868c949b7c921687d489e78a4",
+      "bytes": 1961802,
+      "stored_file": "source.gz"
+    },
+    {
+      "label": "before-small",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/before/verified-final-title-hints-20261020/09-paused-1024x640.png",
+      "sha256": "08b939957e84e321c3e35bb5aac5f403fa0d2120565ac978746078e505093a3c",
+      "bytes": 327564,
+      "png_size": {
+        "width": 1024,
+        "height": 640
+      },
+      "stored_file": "before-small.png"
+    },
+    {
+      "label": "after-small",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/after-frame-metadata/12-paused-1024x640.png",
+      "sha256": "781f110048873bc2dbdba60515ec7bcf491729dafbc0676588ca4587838cb905",
+      "bytes": 329843,
+      "png_size": {
+        "width": 1024,
+        "height": 640
+      },
+      "stored_file": "after-small.png"
+    },
+    {
+      "label": "controller-small",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/after-frame-metadata/09-settings-1024x640.png",
+      "sha256": "15d2faa090d9f4374cd1782a3fadc8c7735f74da5c4f66eb074d399ce5c59304",
+      "bytes": 335938,
+      "png_size": {
+        "width": 1024,
+        "height": 640
+      },
+      "stored_file": "controller-small.png"
+    },
+    {
+      "label": "settings",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/after-frame-metadata/04-settings-1440x900.png",
+      "sha256": "fd6e4e9147c414390220f05ac16bb129277b27f1f9c220ab3acb5bb48486d8af",
+      "bytes": 542177,
+      "png_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "stored_file": "settings.png"
+    },
+    {
+      "label": "first-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/after/results.json",
+      "sha256": "91db070f7cd6d92ea20d59d967075d7b63689c660d69399ef96d1e9b76971eb0",
+      "bytes": 196126,
+      "stored_file": "first-checks.json"
+    },
+    {
+      "label": "compile",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-game/evidence/readability-r4/compile.log",
+      "sha256": "8286d1488497d0aee27cc76a512932e749b39a53b3e41e084ffdefbfbf716433",
+      "bytes": 39,
+      "stored_file": "compile.log"
+    }
+  ]
+}

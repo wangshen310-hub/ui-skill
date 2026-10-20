@@ -1,0 +1,57 @@
+# R4：最小窗口辅助文字可读性修正
+
+本轮仅修正同一游戏案例的辅助文字。旧版 `483834dd…` 的完整源码、验收和最终截图先冻结于 [before](before/)，没有覆盖 R03 记录、修改技能仓库或推送代码。本轮不属于独立新生成案例回归，也不声称新规则已通过该类回归。
+
+最终应用哈希 `b78bd75416af452e807ff8f8f517744075af4e30ea47c65bc6b75143f6b93aec`。底部按键提示、保存提示、右上状态在场景缩放完成后直接绘制到实际窗口：中文使用 Noto Sans CJK SC Medium 18px，键帽使用 DejaVu Sans 16px、32px 高外框。菜单主体、场景构图、图像素材和交互语义保留原实现，没有全局限制小字。
+
+## 实际字体与布局证据
+
+[typography-and-layout.json](typography-and-layout.json) 记录每张最终截图对应帧的文字、字体文件及哈希、请求字号、字体行高、字形实际墨迹矩形、颜色和窗口坐标；同时读取 PNG 原始尺寸核对。13 张图的 PNG、窗口和绘制坐标空间均一致。
+
+| 辅助元素 | 旧版 1024 下等效字号 | R4 原生字号，两种窗口相同 | 最终字形实际墨迹高度 |
+| --- | ---: | ---: | ---: |
+| 底部中文说明 | 约 12.1px | 18px Medium | 18–19px |
+| 键帽文字 | 约 10.7px | 16px | 12–15px，随字形变化 |
+| 保存提示 | 12.8px | 18px Medium | 18px |
+| 右上状态 | 约 12.1px | 18px Medium | 18px |
+
+旧值由原源码字号乘 `1024/1440` 推算；新值来自最终运行帧的实际字体渲染，未把字体行高当作可见字形高度。键帽外框在 1024 下由约 20.6px 增至 32px。底部外框在 1024 下为 y=584、底边616，留底部24px；1440 下为 y=835、底边867，留33px。保存提示在1024的可见字形起点为约 `(100,511)`，与菜单和底栏分开。
+
+辅助中文由 `#97A6B0` 改为 `#BECDD3`，键帽字为 `#D1DFE2`、边框 `#7796A2`，保存提示保留薄荷色 `#C0E9DD`。相对场景基色 `#071019`，辅助中文的名义纯色对比从 7.653:1 增至 11.723:1；这是纯色计算，不代表抗锯齿边缘和每个星点背景的对比值。
+
+## 实际查看与对照
+
+已按实际像素查看1440和1024下的键盘/控制器模式，以及设置保存提示。1024下底部说明、键帽和右上状态明显更易辨认；保存提示能直接读出，底栏没有挤占主菜单。没有仅凭“不溢出”推断可读性。
+
+| 场景 | 冻结旧图 | R4 最终图 |
+| --- | --- | --- |
+| 键盘暂停 1440 | [旧](before/verified-final-title-hints-20261020/10-paused-1440x900.png) | [新](after-frame-metadata/13-paused-1440x900.png) |
+| 键盘暂停 1024 | [旧](before/verified-final-title-hints-20261020/09-paused-1024x640.png) | [新](after-frame-metadata/12-paused-1024x640.png) |
+| 键盘设置/保存 1440 | [旧](before/verified-final-title-hints-20261020/03-settings-1440x900.png) | [新](after-frame-metadata/04-settings-1440x900.png) |
+| 键盘设置/保存 1024 | [旧](before/verified-final-title-hints-20261020/08-settings-1024x640.png) | [新](after-frame-metadata/11-settings-1024x640.png) |
+| 控制器设置/保存 1024 | [旧](before/verified-final-title-hints-20261020/06-settings-1024x640.png) | [新](after-frame-metadata/09-settings-1024x640.png) |
+
+额外最终检查：[控制器暂停1440](after-frame-metadata/02-paused-1440x900.png)、[控制器设置/保存1440](after-frame-metadata/05-settings-1440x900.png)、[控制器暂停1024](after-frame-metadata/08-paused-1024x640.png)。控制器模式均由合成输入触发。
+
+## 执行、结果与清理
+
+所有编译、应用运行和截图均通过 SSH 在腾讯云 `/opt/ui-skill-lab-20261020/round-0003-game` 完成，控制端只编辑、传输、查看和核对归档文件。运行环境沿用 Python 3.11.6、Pygame 2.6.1、SDL 2.28.4，以及独立 Xvfb/X11 软件渲染。实际命令：
+
+```sh
+ssh tencent-opencloudos
+cd /opt/ui-skill-lab-20261020/round-0003-game
+PYTHONDONTWRITEBYTECODE=1 /opt/ui-skill-validation-20261020/venv/bin/python acceptance.py --output-dir evidence/readability-r4/after-frame-metadata > evidence/readability-r4/after-frame-metadata.console.jsonl 2>&1
+PYTHONDONTWRITEBYTECODE=1 /opt/ui-skill-validation-20261020/venv/bin/python evidence/readability-r4/collect_evidence.py > evidence/readability-r4/audit.log
+```
+
+[最终原始 results.json](after-frame-metadata/results.json)：29项流程断言通过、13张截图、47条记录、零失败、菜单退出码0，耗时13.448秒。覆盖暂停冻结/继续、键盘与焦点、设置和保存文件、标题页重启、窗口往返，以及11项明确标记的合成手柄断言。`native_window` 每次动作前刷新；PNG 保存完成后才以应用同帧截图事件记录字形指标。
+
+首轮 [after](after/) 也通过29项，但最后一张截图的验收 `state.json` 元数据可能仍来自缩放前一帧，因此完整保留，并修正截图取证时序后复跑；最终13张均通过同帧尺寸核对。[compile.log](compile.log) 保留远端两份源码编译结果，[runtime-summary.json](runtime-summary.json) 保留字体/取证复核及 `/proc` 清理结果：无本例应用或私有Xvfb残留、FIFO不存在，设置恢复为60%与轨道指引开启。
+
+实体控制器计数0，未验证真实手柄、硬件GPU、高DPI或1024以下尺寸。源码包 `readability-r4-source.tar.gz` 仅包含源码、设置、行星素材和说明，不含Python、虚拟环境或依赖。
+
+```text
+before app.py  483834ddc08acfe3071b27c380408544e5af30e8af2ea52fcaf1c1770e78ccd0
+after app.py   b78bd75416af452e807ff8f8f517744075af4e30ea47c65bc6b75143f6b93aec
+acceptance.py  692a9e57ee28dd2699e2a9825917bee847df54826e9dbf5491c1ca4d59e16a3e
+```

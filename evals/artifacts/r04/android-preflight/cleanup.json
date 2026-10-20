@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-20T23:24:56.977462+00:00",
+  "removed": [
+    {
+      "path": "/opt/ui-skill-lab-20261020/android-validation/downloads/cmdline-tools.zip",
+      "size": 167944192,
+      "sha256": "d984bdbec41c80b9dee35d8755be62bd2b9c1821957bd2c5fe5e06a51ac12f97",
+      "reason": "Unfinished SDK-tools download stopped on parent instruction; not verified or extracted"
+    },
+    {
+      "path": "/opt/ui-skill-lab-20261020/android-validation/sdk/java",
+      "regular_file_bytes": 332109578,
+      "reason": "No authorized Android build remains; remove unused isolated tools/caches, preserve App snapshot and evidence"
+    },
+    {
+      "path": "/opt/ui-skill-lab-20261020/android-validation/sdk/flutter",
+      "regular_file_bytes": 131617355,
+      "reason": "No authorized Android build remains; remove unused isolated tools/caches, preserve App snapshot and evidence"
+    },
+    {
+      "path": "/opt/ui-skill-lab-20261020/android-validation/sdk/pub-cache",
+      "regular_file_bytes": 95767229,
+      "reason": "No authorized Android build remains; remove unused isolated tools/caches, preserve App snapshot and evidence"
+    }
+  ],
+  "original_app_integrity": {
+    "checked_at_utc": "2026-10-20T23:24:56.977462+00:00",
+    "before_count": 33,
+    "after_count": 33,
+    "all_equal": true,
+    "changed": [],
+    "added": []
+  },
+  "license_accepted": false,
+  "sdk_license_directory_exists": false,
+  "apk_files": []
+}

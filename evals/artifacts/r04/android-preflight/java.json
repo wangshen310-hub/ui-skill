@@ -1,0 +1,10 @@
+[
+  {
+    "command": [
+      "/opt/ui-skill-lab-20261020/android-validation/sdk/java/jdk-17.0.20.1+1/bin/java",
+      "-version"
+    ],
+    "exit": 0,
+    "output": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)\nOpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)\n"
+  }
+]

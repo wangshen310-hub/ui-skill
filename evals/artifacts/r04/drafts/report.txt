@@ -1,0 +1,25 @@
+# 原生桌面拍摄备注案例
+
+成品为 PySide6 原生应用，三个明确的本地摄影样例，可编辑标题与备注、保存草稿、返回清单并重开。数据真实写入指定文件夹中的 projects.json。没有 HTML、网络服务或营销内容。
+
+仅在指定快照 5328f80 的 SKILL.md 及其条件引用 art-direction、writing、design-spec、verification 指导下独立制作。另按快照要求读取内置 imagegen 技能。没有读取 evals、其他案例应用源码/测试/报告、评审、预期修法或 git diff；没有修改技能仓库或推送。
+
+参考：references/editor.png 与 references/list.png 均先由内置 imagegen 生成并实际查看，然后才编写视觉布局。提示词和来源在 references/imagegen-prompts.md、design.md。暖白工作区、单列清单、深绿色操作和大面积备注编辑器沿用两图；系统标题栏由原生窗口负责，未照图伪造。
+
+所有编译检查、运行和截图均在腾讯云 SSH tencent-opencloudos（VM-0-17-opencloudos），使用获准复用的 PySide6 6.12.0 环境、case-local native-deps 和独立 Xvfb。没有安装新依赖、修改全局环境或触碰其他案例数据。控制端只编辑、传输和查看图像。
+
+实际验证：
+
+- 1180×780 清单/编辑页截图，以及 640×480 长标题、90行备注；截图均实际查看。主要操作与保存状态可见，内容在原生编辑器中滚动。
+- ↑/↓、Enter 打开；Tab、Shift+Tab、Space、Ctrl+S、Alt+Left、Escape；返回后恢复所选项目与清单焦点，确认框默认及 Enter/Escape 均继续编辑。
+- 编辑标题/备注→保存真实 JSON→返回清单→重开→独立新进程重新读取，文件内容逐项核对。
+- 在隔离 verification-data 中把 projects.json 暂时变成同名目录，真实触发 os.replace 的 EISDIR；失败原始异常在 evidence/behavior-raw.json。输入保持不丢失，失败重试保持编辑；保存并返回失败时留在编辑器；继续编辑、明确放弃返回均可完成。
+- 同样的真实文件故障下，关闭时保存失败留在应用、继续编辑保留输入、明确放弃可关闭；恢复正常目标后重试会真实落盘。正常“保存并返回”和“保存并关闭”也分别验证。
+- 空标题不覆盖文件且焦点回标题；损坏项目文件不自动覆盖，修复后可重新读取。
+- app.py 实际入口以单独进程启动并截图，随后停止。py_compile 工程检查通过。
+
+证据：evidence/behavior-raw.json 与 behavior-console.log；restart-keyboard-raw.json 与对应 console；standalone-raw.json；编号01–13截图及对话框截图。初始可运行源码、清单/编辑截图与首轮原始失败记录保存在 initial/。首轮发现模态框返回后的焦点问题，已修正并复验；截图对照还修正了确认框图标列空白和错误条过长路径。没有用审美自评分数代替证据。
+
+限制：验收为 Linux 私有 Xvfb、Qt xcb、Fusion样式，未测试真实窗口管理器的标题栏/系统关闭按钮、屏幕阅读器、高 DPI 或 Windows/macOS。初始截图不包含系统装饰；独立入口截图保留1440×1000显示区域及其黑色未占用区。仅测单进程本地编辑，不提供并发冲突合并、后台自动保存或云同步。无真实客户数据，所有项目均是明确本地样例。
+
+交付：本目录源码、样例、运行说明、参考、初版、最终证据与 SHA256SUMS；远端同目录 `/opt/ui-skill-lab-20261020/round-0004-drafts`。本案例 Python/Xvfb 进程均已结束。

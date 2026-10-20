@@ -1,0 +1,46 @@
+# Android 构建准备检查：未产生 APK
+
+2026-10-20 UTC，腾讯云 `tencent-opencloudos:/opt/ui-skill-lab-20261020/android-validation`。本次保留原 Flutter 技术栈和业务功能，没有执行 Android 构建，也没有 APK、Android 模拟器或真机运行证据。原移动案例此前的 Flutter widget engine 验收继续独立有效，不能由本记录升级为设备验收。
+
+停止原因：本次没有 Android SDK 条款接受授权。上级明确要求在已知许可阻碍后仅完成证据和清理，不继续下载大包。本次未运行 `sdkmanager`，未执行 `--licenses`，未写入许可哈希，也没有替用户接受条款。
+
+## 实时环境与原目标
+
+首次 SSH 实查：`VM-0-17-opencloudos`，`/opt` 可用 8,570,458,112 字节；RAM 3655 MiB、available 1564 MiB，swap 已用 1396 MiB。系统没有 Java，没有检测到 Android SDK，`/dev/kvm` 不存在。没有以旧日志推断进程存活，也没有停止或重配其他服务。
+
+原工程实际配置：Flutter 3.35.5、Dart 3.9.2、AGP 8.9.1、Kotlin 2.1.0、Gradle 8.12 `all`、compileSdk/targetSdk 36、minSdk 24、NDK 27.0.12077973。本次不降低目标，不删除原功能，不改成 HTML。隔离副本仅将 Gradle 内存调整为 heap 768 MiB、metaspace 384 MiB、单 worker、关闭并行和常驻 daemon、Kotlin 进程内编译；未实际启动 Gradle。
+
+## 官方来源、许可与体积证据
+
+官方仓库清单：[Google Android repository XML](https://dl.google.com/android/repository/repository2-3.xml)，原文保存在 `evidence/android-repository.xml`。从其 `android-sdk-license` 原文提取 `evidence/android-sdk-license.txt`。第 2.1 条明确要求使用前同意，不接受即不可使用；第 2.4 条要求代表实体接受时有充分授权。没有根据一般工具授权推定此项接受。
+
+使用 HTTP Range 仅读取官方 ZIP 尾部及中央目录，没有为计算预算完整下载平台、构建工具或 NDK。`probe_archives.py` 是实际执行的远端脚本；`evidence/zip-budget-probe.log`、`package-budget.json` 保留地址、官方 SHA1、包大小、ZIP 条目数和解压文件字节数。
+
+| 官方包 | ZIP 字节 | 解压文件字节 |
+| --- | ---: | ---: |
+| API 36 platform r02 | 65,878,410 | 106,177,284 |
+| NDK 27.0.12077973 | 663,957,918 | 2,053,747,538 |
+| build-tools 35.0.0 | 61,958,799 | 153,245,182 |
+| cmdline-tools 16111833 | 181,052,239 | 181,024,533 |
+| platform-tools 37.0.1 | 9,054,187 | 22,198,160 |
+| 合计 | 981,901,553 | 2,516,392,697 |
+
+采用本次准备的隔离布局时，移除未完成下载后的现有普通文件为 601,576,046 字节，叠加上述五包为 **3,117,968,743 字节**，已经超过 3,000,000,000 字节上限；尚未计 Gradle 8.12、AGP/Kotlin 缓存、Flutter Android 引擎、APK/中间文件与文件系统分配开销。这是本方案的预算，不能解释成对所有精简/复用方案的数学下界；本次没有在许可未获授权时进一步试装确认哪些 NDK/工具项会被实际构建调用。
+
+官方文档网页经 agent-reach 的 Jina 读取和官方站点直连均连接超时；本记录的包/许可事实直接依据可访问的 Google 官方仓库 XML，不把空网页文件当作读到的资料。
+
+## 已取得的工具证据与终止
+
+在停止指令到达前，已从 [Adoptium 官方 API](https://api.adoptium.net/v3/assets/latest/17/hotspot?architecture=x64&image_type=jdk&os=linux) 取得指定发布元数据并远端下载官方 GitHub 发布的 Temurin 17.0.20.1+1。完整归档 193,252,603 字节，SHA256 `3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e`，与官方 API 提供的校验值相同。解压文件 332,109,578 字节，实际执行隔离 `java -version` 返回 0；原输出见 `evidence/tool-versions.json`，下载地址/校验见 `evidence/downloads.json`，准备原始输出见 `evidence/prepare.log`。
+
+停止指令到达时 Android cmdline-tools 仅下载 167,944,192 字节；已明确终止本次 Python 准备进程，退出 143。此文件不是完整/校验通过的工具包，没有解压或执行，随后删除。`evidence/cleanup.json` 记录其实际大小、SHA256 和删除原因。没有完整下载 NDK/API/build-tools/platform-tools，也没有下载 Gradle 或 Android Flutter 引擎。
+
+没有执行的待验证命令：`flutter --no-version-check build apk --debug --target-platform android-arm64 --no-pub`。它仅说明未来目标，不是本次构建日志或失败证据。APK 路径、大小、SHA 均不存在，不用准备动作冒充 APK 构建通过。
+
+## 清理与保留
+
+已删除本次未完成 Android 工具包、隔离 Java、隔离 Flutter 源码/缓存、隔离 pub-cache；未改系统 PATH、默认缓存、生产配置或原案例工具。保留 App 源码快照（约 40 MiB）、本次脚本、官方小体积清单/条款和日志，方便审阅。本次准备阶段观察到的目录使用低于 0.8 GB，未达到 3 GB 上限。
+
+原 App 的 `lib`、`test`、`android`、`assets` 共 33 文件，在前后逐文件 SHA256 核对中完全一致，见 `evidence/original-app-integrity.json`。原案例业务源和已有验收证据未改写；隔离副本包含上述内存参数和路径配置变化。未修改或推送技能仓库。
+
+最终资源、清理清单、当前进程检查和证据 SHA256 分别见 `evidence/resources-final.json`、`cleanup.json`、`process-check-final.json`、`SHA256SUMS.txt`。收尾后本次下载/编译/运行进程均已退出。实际构建仍需明确 Android SDK 许可决定以及可行的隔离磁盘预算；Android 运行验收还需要实际设备或具备资源的模拟器，APK 构建即使将来成功也不等于运行验收。

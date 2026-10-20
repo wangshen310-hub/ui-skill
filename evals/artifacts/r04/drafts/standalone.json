@@ -1,0 +1,11 @@
+{
+  "entrypoint": "app.py --data-dir demo-data",
+  "pid": 1267066,
+  "running_during_capture": true,
+  "local_sample_count": 3,
+  "screen": [
+    1440,
+    1000
+  ],
+  "own_process_stopped": true
+}

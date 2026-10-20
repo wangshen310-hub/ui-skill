@@ -1,0 +1,38 @@
+[
+  {
+    "check": "independent-process-reload",
+    "pid": 1265727,
+    "file": "/opt/ui-skill-lab-20261020/round-0004-drafts/verification-data/projects.json",
+    "title": "秋季人像 · 河岸外景（已确认机位）",
+    "notes": "集合地点：滨河公园南门。\n下午四点先拍芦苇区逆光，太阳落下前转到桥边。\n服装：米色针织衫、深色长裤。带一块白色反光板。\n给林女士补拍一张横版全身照。\n补充：桥边先拍横幅，反光板由小陈协助。\n写入失败时这段备注仍应保留。",
+    "sha256": "8441f41e05d78d105f68ac577c41bf2f75b13f595b4fb36f857aa393d590a662"
+  },
+  {
+    "check": "tab-space-open-second-project",
+    "title": "陶器上新 · 白底静物",
+    "focus": "titleEdit"
+  },
+  {
+    "check": "escape-cancels-unsaved-return",
+    "default": "继续编辑",
+    "input_preserved": true
+  },
+  {
+    "check": "enter-default-keeps-editing",
+    "default": "继续编辑",
+    "window_open": true
+  },
+  {
+    "check": "save-and-return-success",
+    "button": "保存并返回",
+    "real_file_updated": true,
+    "focus": "projectList",
+    "selection": 1
+  },
+  {
+    "check": "save-and-close-success",
+    "button": "保存并关闭",
+    "window_closed": true,
+    "real_file_updated": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "verified_at_utc": "2026-10-20T23:23:24.792907+00:00",
+  "host": "VM-0-17-opencloudos",
+  "os": "OpenCloudOS 9.6",
+  "python": "3.11.6 (main, Mar  4 2026, 13:33:00) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.7-1)]",
+  "records": 47,
+  "passed_assertions": 29,
+  "synthetic_controller_assertions": 11,
+  "failures": [],
+  "screenshots": 13,
+  "all_capture_frame_dimensions_match": true,
+  "duration_seconds": 13.448,
+  "remaining_case_processes": [],
+  "fifo_exists": false,
+  "final_settings": {
+    "star_brightness": 60,
+    "orbit_guides": true
+  },
+  "source_sha256": {
+    "app.py": "b78bd75416af452e807ff8f8f517744075af4e30ea47c65bc6b75143f6b93aec",
+    "acceptance.py": "692a9e57ee28dd2699e2a9825917bee847df54826e9dbf5491c1ca4d59e16a3e"
+  },
+  "baseline_sha256": {
+    "app.py": "483834ddc08acfe3071b27c380408544e5af30e8af2ea52fcaf1c1770e78ccd0",
+    "acceptance.py": "6140516be81446f0240875833ade986588546d8fa7d7801208bd6131201467c8"
+  }
+}
