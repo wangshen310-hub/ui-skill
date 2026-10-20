@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "entrypoint": "./run.sh",
+  "process_id": 1151108,
+  "native_x11_window_id": 4194311,
+  "qpa": "xcb",
+  "display": ":0",
+  "input": "xdotool key --clearmodifiers ctrl+Return (XTest keyboard events)",
+  "geometry": "WINDOW=4194311\nX=0\nY=0\nWIDTH=1100\nHEIGHT=760\nSCREEN=0\n",
+  "outputs": [
+    {
+      "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/sample-output/林间婚礼_精选_001.jpg",
+      "format": "JPEG",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 45013
+    },
+    {
+      "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/sample-output/林间婚礼_精选_002.jpg",
+      "format": "JPEG",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 31070
+    },
+    {
+      "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/sample-output/城市建筑外景_秋季作品集_交付客户最终确认版本_摄影师复核_高分辨率原片_请保留文件名_001.jpg",
+      "format": "JPEG",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 45607
+    },
+    {
+      "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/sample-output/山间湖泊_日出_004.jpg",
+      "format": "JPEG",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 29895
+    }
+  ],
+  "expected_corrupt_source": "秋日古建筑_庭院光影_003.jpg"
+}

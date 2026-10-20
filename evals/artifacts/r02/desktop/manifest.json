@@ -1,0 +1,138 @@
+{
+  "created_at_utc": "2026-10-20T22:26:03.661267+00:00",
+  "case": "r02-desktop",
+  "target_platform": "Native desktop app",
+  "actual_runtime": "PySide6 6.12 / Qt Widgets / xcb / isolated Xvfb; Pillow real JPEG/PNG export",
+  "declared_skill_revision": "a5eb2ab3157b957bb842065328b8323610c14480",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/a5eb2ab/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "33ecd48132a65fcde916c3712aaaf7734bee539b472ae87726fd4703edea6748",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "3e001aad3513592c4ecaf07635c712c638022f97f8087b0dbf794a750c968357",
+    "references/verification.md": "c3d49d834bb255923ef62362f59c4f7226a3fb3bda43b7536554910b44674fdd",
+    "references/writing.md": "3dd91eb7b6372d00cdf9ae39b18b82e735dd0bbc01ef0cc411c626669785f466",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "reference",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/reference.png",
+      "sha256": "f0d12e3a58e2d2b525b8182833eb9ab6af6c629f2c0b9737579e889b199863d7",
+      "bytes": 1272488,
+      "png_size": {
+        "width": 1509,
+        "height": 1042
+      },
+      "stored_file": "reference.png"
+    },
+    {
+      "label": "initial",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/initial-1100x760.png",
+      "sha256": "526b238a744fedaa34f0ef3598d8677ddaccf52a63c996249db4ff5ca76e74f6",
+      "bytes": 95517,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "initial.png"
+    },
+    {
+      "label": "desktop",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/final-1100x760.png",
+      "sha256": "cdf295cf6b74954be3bc5f3f04139f58badcdff9b927d49805d711c01c2b6a84",
+      "bytes": 95546,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "desktop.png"
+    },
+    {
+      "label": "minimum",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/minimum-680x500.png",
+      "sha256": "8d48245bdd06adf6d6deb149053e62d56143293994d5fb24a94bba73a783b635",
+      "bytes": 79795,
+      "png_size": {
+        "width": 680,
+        "height": 500
+      },
+      "stored_file": "minimum.png"
+    },
+    {
+      "label": "scale150",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/scale150-900x640.png",
+      "sha256": "b62a6d8f4e1aaa9b6b8482c14adad8d8e6d686116143aed104be301878e2a044",
+      "bytes": 141902,
+      "png_size": {
+        "width": 1350,
+        "height": 960
+      },
+      "stored_file": "scale150.png"
+    },
+    {
+      "label": "failure",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/export-failure-1100x760.png",
+      "sha256": "ea8eb28ab7f429fc86b79ced4ea54d156d6a2ec16515ae17a7702f53c718d963",
+      "bytes": 107407,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "failure.png"
+    },
+    {
+      "label": "retry",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/retry-success-1100x760.png",
+      "sha256": "f3240f2525ab03e3a2028850011df0df10546a59488097a9e3f2f446210b18bd",
+      "bytes": 109890,
+      "png_size": {
+        "width": 1100,
+        "height": 760
+      },
+      "stored_file": "retry.png"
+    },
+    {
+      "label": "checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/workflow-results.json",
+      "sha256": "3ae96b6644fc5244d83f434405e3c1cc12e81c5505c9a59a2608212e75725e1c",
+      "bytes": 4206,
+      "stored_file": "checks.json"
+    },
+    {
+      "label": "launcher-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/launcher-results.json",
+      "sha256": "ddd4adde93b23cbe87336d3d3ad2206540ec7f3dfe39eb7cc3f1a39bffe7bcb2",
+      "bytes": 1352,
+      "stored_file": "launcher-checks.json"
+    },
+    {
+      "label": "scale-checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/scale150.json",
+      "sha256": "148e4c4c866377d5406d3f84350d29ee8e9fff4516f49b7f529153114c08cd8f",
+      "bytes": 262,
+      "stored_file": "scale-checks.json"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/replay-source.zip",
+      "sha256": "5d7e055b99bbac522d5946b625f54719faa98a12e476738402b166a82044e654",
+      "bytes": 127122,
+      "stored_file": "source.zip"
+    },
+    {
+      "label": "creator-report",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/REPORT.md",
+      "sha256": "c089bb8b4fc366ae5d8c7847f0680134cd504e2d7f65080160f796759b934d01",
+      "bytes": 6403,
+      "stored_file": "creator-report.md"
+    },
+    {
+      "label": "source-hashes",
+      "source": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/source-sha256.txt",
+      "sha256": "8e9bbc7c3c02c52df5735271e41b36c84744a0322e3c2e29a34f83a37ad2f310",
+      "bytes": 776,
+      "stored_file": "source-hashes.txt"
+    }
+  ]
+}

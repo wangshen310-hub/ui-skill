@@ -1,0 +1,77 @@
+{
+  "skill_version": "01b2ad2",
+  "environment": {
+    "host": "tencent-opencloudos",
+    "node": "v20.20.2",
+    "browser": "/usr/bin/google-chrome",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36"
+  },
+  "checks": [
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "desktop 1440x1000 no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 1440,
+        "scroll": 1440,
+        "font": "\"Noto Serif SC\", \"Songti SC\", SimSun, serif",
+        "fontSize": "22px",
+        "fontReady": true
+      }
+    },
+    {
+      "name": "desktop 1440x1000 local Chinese serif loaded",
+      "passed": true
+    },
+    {
+      "name": "first article previous disabled",
+      "passed": true
+    },
+    {
+      "name": "Tab enters skip link",
+      "passed": true
+    },
+    {
+      "name": "skip link reaches article",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches next article",
+      "passed": true
+    },
+    {
+      "name": "Shift Tab reaches bookmark",
+      "passed": true
+    },
+    {
+      "name": "keyboard focus has visible outline",
+      "passed": true
+    },
+    {
+      "name": "Space bookmarks with retained focus",
+      "passed": true
+    },
+    {
+      "name": "B cancels bookmark",
+      "passed": true
+    },
+    {
+      "name": "help opens with focus inside",
+      "passed": true
+    },
+    {
+      "name": "help Tab stays in dialog",
+      "passed": false
+    }
+  ],
+  "browser_errors": [],
+  "screenshots": [
+    "initial-desktop.png",
+    "keyboard-focus.png"
+  ],
+  "passed": false,
+  "failure": "AssertionError('help Tab stays in dialog')"
+}

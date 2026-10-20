@@ -1,0 +1,208 @@
+{
+  "label": "final",
+  "browser": "Google Chrome / Patchright on tencent-opencloudos",
+  "checks": [
+    {
+      "check": "initial full filename matches actual fixture",
+      "passed": true
+    },
+    {
+      "check": "comparison metadata comes from disk",
+      "passed": true
+    },
+    {
+      "check": "both full text previews are visible and reflect disk",
+      "passed": true,
+      "details": {
+        "existing": "# 2026 秋季品牌发布会\n交付日期：10 月 23 日\n主视觉：石墨蓝\n会场：杭州 · 临江展厅\n备注：按首轮确认方案执行。",
+        "incoming": "# 2026 秋季品牌发布会\n交付日期：10 月 25 日\n主视觉：苔绿色\n会场：杭州 · 临江展厅\n备注：使用场地方复核后的方案。"
+      }
+    },
+    {
+      "check": "safe initial focus on keep both",
+      "passed": true,
+      "details": "<button type=\"button\" data-choice=\"keep\" class=\"primary keep\">保留两者</button>"
+    },
+    {
+      "check": "desktop dialog and filename fit",
+      "passed": true,
+      "details": {
+        "viewport": [
+          1440,
+          1000
+        ],
+        "dialog": {
+          "x": 290,
+          "y": 138,
+          "width": 860,
+          "height": 725,
+          "scrollHeight": 723,
+          "clientHeight": 723
+        },
+        "pageOverflow": false,
+        "nameOverflow": false,
+        "nameBox": {
+          "width": 747,
+          "height": 26.390625
+        },
+        "nameStyle": {
+          "textOverflow": "clip",
+          "whiteSpace": "normal"
+        }
+      }
+    },
+    {
+      "check": "Tab wraps within dialog",
+      "passed": true,
+      "details": "<button class=\"icon-button close\" type=\"button\" aria-label=\"取消复制\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"m6 6 12 12M18 6 6 18\"></path></svg></button>"
+    },
+    {
+      "check": "Shift+Tab wraps within dialog",
+      "passed": true,
+      "details": "<button type=\"button\" data-choice=\"keep\" class=\"primary keep\">保留两者</button>"
+    },
+    {
+      "check": "Escape closes and restores trigger focus",
+      "passed": true
+    },
+    {
+      "check": "cancel does not modify fixture bytes",
+      "passed": true
+    },
+    {
+      "check": "close control cancels without disk changes",
+      "passed": true
+    },
+    {
+      "check": "keep both writes exactly one expected copy",
+      "passed": true
+    },
+    {
+      "check": "keep both preserves original content",
+      "passed": true
+    },
+    {
+      "check": "new copy bytes equal incoming bytes",
+      "passed": true
+    },
+    {
+      "check": "keep result restores trigger focus",
+      "passed": true
+    },
+    {
+      "check": "existing copy advances copy name",
+      "passed": true
+    },
+    {
+      "check": "second keep uses previewed unique name",
+      "passed": true
+    },
+    {
+      "check": "replace writes incoming bytes under original name",
+      "passed": true
+    },
+    {
+      "check": "replace leaves source file intact",
+      "passed": true
+    },
+    {
+      "check": "skip leaves both directories unchanged",
+      "passed": true
+    },
+    {
+      "check": "failed request retains dialog and shows error",
+      "passed": true
+    },
+    {
+      "check": "failed request leaves disk unchanged and permits retry",
+      "passed": true
+    },
+    {
+      "check": "retry performs real copy",
+      "passed": true
+    },
+    {
+      "check": "stale comparison is rejected with actionable message",
+      "passed": true
+    },
+    {
+      "check": "stale comparison does not overwrite the changed file",
+      "passed": true
+    },
+    {
+      "check": "pending disables all decision controls",
+      "passed": true
+    },
+    {
+      "check": "pending Tab keeps focus inside modal",
+      "passed": true
+    },
+    {
+      "check": "pending Escape does not dismiss the operation",
+      "passed": true
+    },
+    {
+      "check": "pending request completes exactly one copy",
+      "passed": true
+    },
+    {
+      "check": "narrow width has no horizontal clipping",
+      "passed": true,
+      "details": {
+        "pageOverflow": false,
+        "dialogOverflow": false,
+        "dialogHeight": 820,
+        "viewportHeight": 844,
+        "scrollTop": 0,
+        "scrollHeight": 1044,
+        "clientHeight": 818,
+        "active": "<h1 id=\"conflict-title\" tabindex=\"-1\">同名文件已存在</h1>",
+        "activeVisible": true,
+        "nameOverflow": false
+      }
+    },
+    {
+      "check": "narrow initial focused element is visible",
+      "passed": true
+    },
+    {
+      "check": "narrow action reachable and completes",
+      "passed": true
+    },
+    {
+      "check": "low-height content remains scrollable inside viewport",
+      "passed": true,
+      "details": {
+        "height": 552,
+        "viewportHeight": 600,
+        "scrollHeight": 723,
+        "clientHeight": 550,
+        "activeVisible": true
+      }
+    },
+    {
+      "check": "low-height Escape restores focus",
+      "passed": true
+    },
+    {
+      "check": "browser has no uncaught JavaScript errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "console contains only exercised HTTP 500 and stale-file 409",
+      "passed": true,
+      "details": [
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Failed to load resource: the server responded with a status of 409 (Conflict)"
+      ]
+    }
+  ],
+  "browserErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  ],
+  "passed": 35,
+  "total": 35
+}

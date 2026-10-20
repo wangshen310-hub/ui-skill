@@ -1,0 +1,58 @@
+[
+  {
+    "check": "native SDL window running",
+    "passed": true
+  },
+  {
+    "check": "Escape opens pause",
+    "passed": true
+  },
+  {
+    "check": "pause stops scene simulation",
+    "passed": true
+  },
+  {
+    "check": "keyboard opens settings",
+    "passed": true
+  },
+  {
+    "check": "setting changes rendered scene",
+    "passed": true
+  },
+  {
+    "check": "settings return restores menu focus",
+    "passed": true
+  },
+  {
+    "check": "resume restarts simulation",
+    "passed": true
+  },
+  {
+    "check": "synthetic controller selects and confirms",
+    "passed": true
+  },
+  {
+    "check": "synthetic controller back",
+    "passed": true
+  },
+  {
+    "check": "controller axis does not repeat while held",
+    "passed": true
+  },
+  {
+    "check": "return to title is actual navigation",
+    "passed": true
+  },
+  {
+    "check": "title starts game",
+    "passed": true
+  },
+  {
+    "check": "native window resize",
+    "passed": true
+  },
+  {
+    "check": "mouse activation after resize",
+    "passed": true
+  }
+]

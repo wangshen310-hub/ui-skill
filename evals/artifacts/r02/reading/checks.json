@@ -1,0 +1,272 @@
+{
+  "skill_version": "01b2ad2",
+  "environment": {
+    "host": "tencent-opencloudos",
+    "node": "v20.20.2",
+    "browser": "/usr/bin/google-chrome",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36"
+  },
+  "checks": [
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "desktop 1440x1000 no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 1440,
+        "scroll": 1440,
+        "font": "\"Noto Serif SC\", \"Songti SC\", SimSun, serif",
+        "fontSize": "26px",
+        "fontReady": true
+      }
+    },
+    {
+      "name": "desktop 1440x1000 local Chinese serif loaded",
+      "passed": true
+    },
+    {
+      "name": "first article previous disabled",
+      "passed": true
+    },
+    {
+      "name": "Tab enters skip link",
+      "passed": true
+    },
+    {
+      "name": "skip link reaches article",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches next article",
+      "passed": true
+    },
+    {
+      "name": "Shift Tab reaches bookmark",
+      "passed": true
+    },
+    {
+      "name": "keyboard focus has visible outline",
+      "passed": true
+    },
+    {
+      "name": "Space bookmarks with retained focus",
+      "passed": true
+    },
+    {
+      "name": "B cancels bookmark",
+      "passed": true
+    },
+    {
+      "name": "help opens with focus inside",
+      "passed": true
+    },
+    {
+      "name": "help Tab stays in dialog",
+      "passed": true
+    },
+    {
+      "name": "help Escape restores opener",
+      "passed": true
+    },
+    {
+      "name": "full article 2",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "TOC active item matches article",
+      "passed": true
+    },
+    {
+      "name": "full article 3",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "last article next disabled",
+      "passed": true
+    },
+    {
+      "name": "full article 3",
+      "passed": true
+    },
+    {
+      "name": "full article 2",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "bookmark persists through reload",
+      "passed": true
+    },
+    {
+      "name": "saved filter contains one saved essay",
+      "passed": true
+    },
+    {
+      "name": "filter selection retains focus",
+      "passed": true
+    },
+    {
+      "name": "empty saved state appears",
+      "passed": true
+    },
+    {
+      "name": "removed list item restores focus to filter",
+      "passed": true
+    },
+    {
+      "name": "tab arrow switches filter and retains tab focus",
+      "passed": true
+    },
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "history restores article start",
+      "passed": true
+    },
+    {
+      "name": "full article 1",
+      "passed": true
+    },
+    {
+      "name": "mobile 390x844 no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 390,
+        "scroll": 390,
+        "font": "\"Noto Serif SC\", \"Songti SC\", SimSun, serif",
+        "fontSize": "18px",
+        "fontReady": true
+      }
+    },
+    {
+      "name": "mobile 390x844 local Chinese serif loaded",
+      "passed": true
+    },
+    {
+      "name": "mobile directory opens with dialog semantics",
+      "passed": true
+    },
+    {
+      "name": "background becomes inert",
+      "passed": true
+    },
+    {
+      "name": "directory reverse Tab wraps to final control",
+      "passed": true
+    },
+    {
+      "name": "directory Tab wraps to close",
+      "passed": true
+    },
+    {
+      "name": "directory Escape restores trigger",
+      "passed": true
+    },
+    {
+      "name": "full article 2",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "selection closes directory and removes inert",
+      "passed": true
+    },
+    {
+      "name": "full article 3",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "next article resets mobile scroll",
+      "passed": true
+    },
+    {
+      "name": "full article 2",
+      "passed": true
+    },
+    {
+      "name": "article change focuses heading",
+      "passed": true
+    },
+    {
+      "name": "mobile bookmark persists through reload",
+      "passed": true
+    },
+    {
+      "name": "mobile saved filter works",
+      "passed": true
+    },
+    {
+      "name": "nested help keeps focus in dialog",
+      "passed": true
+    },
+    {
+      "name": "help Escape preserves directory and focus",
+      "passed": true
+    },
+    {
+      "name": "second Escape closes directory",
+      "passed": true
+    },
+    {
+      "name": "narrow 320x720 no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 320,
+        "scroll": 320,
+        "font": "\"Noto Serif SC\", \"Songti SC\", SimSun, serif",
+        "fontSize": "18px",
+        "fontReady": true
+      }
+    },
+    {
+      "name": "narrow 320x720 local Chinese serif loaded",
+      "passed": true
+    },
+    {
+      "name": "no browser errors or failed resources",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "browser_errors": [],
+  "screenshots": [
+    "desktop-before-interactions.png",
+    "keyboard-focus.png",
+    "saved-desktop.png",
+    "empty-saved-desktop.png",
+    "desktop.png",
+    "mobile.png",
+    "mobile-full.png",
+    "mobile-directory.png",
+    "mobile-320.png",
+    "mobile.png",
+    "mobile-full.png"
+  ],
+  "passed": true
+}

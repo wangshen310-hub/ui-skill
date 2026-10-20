@@ -1,0 +1,11 @@
+{
+  "known_review_Xvfb_pids": [
+    1170869,
+    1173742
+  ],
+  "still_present": {
+    "1170869": false,
+    "1173742": false
+  },
+  "run_logs_record_clean_exit": true
+}

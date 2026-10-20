@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "qpa": "xcb",
+  "display": ":0",
+  "window_exposed": true,
+  "checks": [
+    {
+      "check": "empty queue disables export and retry",
+      "result": "passed"
+    },
+    {
+      "check": "Ctrl+O file picker imports five Unicode-named sample files",
+      "result": "passed",
+      "filenames": [
+        "林间婚礼_精选_001.jpg",
+        "林间婚礼_精选_002.jpg",
+        "城市建筑外景_秋季作品集_交付客户最终确认版本_摄影师复核_高分辨率原片_请保留文件名_001.jpg",
+        "秋日古建筑_庭院光影_003.jpg",
+        "山间湖泊_日出_004.png"
+      ]
+    },
+    {
+      "check": "Tab, Shift+Tab, arrow navigation, Space checkbox toggle",
+      "result": "passed",
+      "focus": "queueTable"
+    },
+    {
+      "check": "long Chinese filename copied in full and shown in Enter dialog; Escape closes dialog",
+      "result": "passed",
+      "focus_note": "main X11 window explicitly refocused by harness because Xvfb has no window manager",
+      "utf8_bytes": 127
+    },
+    {
+      "check": "Escape cancels file selection without modifying queue",
+      "result": "passed"
+    },
+    {
+      "check": "select all toggles export selection and action availability",
+      "result": "passed"
+    },
+    {
+      "check": "missing and invalid output directories prevent export and focus the directory field",
+      "result": "passed"
+    },
+    {
+      "check": "directory picker chooses actual isolated output directory",
+      "result": "passed",
+      "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output"
+    },
+    {
+      "check": "Ctrl+Enter performs real JPEG export; four files reopen and corrupt source fails",
+      "result": "passed",
+      "states": [
+        "done",
+        "done",
+        "done",
+        "failed",
+        "done"
+      ],
+      "outputs": [
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/城市建筑外景_秋季作品集_交付客户最终确认版本_摄影师复核_高分辨率原片_请保留文件名_001.jpg",
+          "bytes": 45607,
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ]
+        },
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/山间湖泊_日出_004.jpg",
+          "bytes": 29895,
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ]
+        },
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/林间婚礼_精选_001.jpg",
+          "bytes": 45013,
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ]
+        },
+        {
+          "path": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/林间婚礼_精选_002.jpg",
+          "bytes": 31070,
+          "format": "JPEG",
+          "dimensions": [
+            1600,
+            1000
+          ]
+        }
+      ],
+      "source_files_unchanged": true,
+      "error": "无法读取图片；修复原文件后可重试"
+    },
+    {
+      "check": "720×600 and minimum 680×500 preserve main controls; long name remains in detail line; dimensions column collapses",
+      "result": "passed",
+      "screenshot": "/opt/ui-skill-lab-20261020/round-0002-desktop/evidence/narrow-720x600.png"
+    },
+    {
+      "check": "repair corrupt source then Ctrl+R retries only failed item; all five outputs reopen",
+      "result": "passed",
+      "new_output": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/秋日古建筑_庭院光影_003.jpg",
+      "successful_outputs_unchanged": true
+    },
+    {
+      "check": "repeat export avoids overwriting; keyboard format selection exports a real PNG",
+      "result": "passed",
+      "collision_output": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/林间婚礼_精选_001_1.jpg",
+      "png_output": "/opt/ui-skill-lab-20261020/round-0002-desktop/test-output/林间婚礼_精选_001.png"
+    },
+    {
+      "check": "Delete removes a queue row without deleting its source; Alt+D focuses output directory",
+      "result": "passed"
+    }
+  ],
+  "output_count": 7
+}
