@@ -1,0 +1,149 @@
+{
+  "created_at_utc": "2026-10-20T23:07:06.605060+00:00",
+  "case": "r03-mobile",
+  "target_platform": "Flutter mobile source",
+  "actual_runtime": "flutter_tester widget engine; no APK or Android device",
+  "declared_skill_revision": "01b2ad2",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/01b2ad2/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "c7d8512397ec1422d3646fb059b0b88f2de1a54b6627bc7f07282db3eb6525f4",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "5cb65de9e146bd8692c4d559aa8c656bbef3d096485779675c7b757f9a1afe18",
+    "references/verification.md": "d8bb4725990288edaddf81c56a0dc72acb1ac9b380958245f84df936d42b36b2",
+    "references/writing.md": "a7ab0fa05982bb195959acffaa001acef9b3ef1caf72f581b11e5af8c6cfcbd2",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "reference",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/reference/reading-reference.png",
+      "sha256": "e414737acdbd6cfbc467f4fd5975d2f4be231e5341e92ba6037eef8bb182cc88",
+      "bytes": 1550614,
+      "png_size": {
+        "width": 1475,
+        "height": 1066
+      },
+      "stored_file": "reference.png"
+    },
+    {
+      "label": "shelf",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/screenshots-final/01-shelf-390x844.png",
+      "sha256": "8c5baad807b4d82fc439cfe8838ed6f5c9b47c4aab6f5b67c93b535b43d259ac",
+      "bytes": 91886,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "shelf.png"
+    },
+    {
+      "label": "reader",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/screenshots-final/02-reader-390x844.png",
+      "sha256": "f772f1877d3d4096b88b870f16738233408fadf3e3073f8b734922530762695e",
+      "bytes": 213949,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "reader.png"
+    },
+    {
+      "label": "font-panel",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/screenshots-final/04-font-settings-390x844.png",
+      "sha256": "591b53c459e1b7d608eef8e872f0214b317f769397e67b5b70c5959df8868ebe",
+      "bytes": 174187,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "font-panel.png"
+    },
+    {
+      "label": "large-shelf",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/screenshots-final/06-shelf-320x640-scale2.png",
+      "sha256": "9de8979c492700a9229f278197587d47fbff43f0fa5574d0cb1fd8974995e1c9",
+      "bytes": 81417,
+      "png_size": {
+        "width": 640,
+        "height": 1280
+      },
+      "stored_file": "large-shelf.png"
+    },
+    {
+      "label": "large-reader",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/screenshots-final/07-reader-320x640-scale2.png",
+      "sha256": "fef9023897ce3ddd0ef90b3664c54e17ec4b05bb2a49f1e995ac092e74d5dd7d",
+      "bytes": 82751,
+      "png_size": {
+        "width": 640,
+        "height": 1280
+      },
+      "stored_file": "large-reader.png"
+    },
+    {
+      "label": "tests",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/test-final.log",
+      "sha256": "a42ee2c35686dc86f3f7cde5e382b3411e538f0ecdd7d0e8287a5ad94d7ec9e5",
+      "bytes": 994,
+      "stored_file": "tests.log"
+    },
+    {
+      "label": "analyze",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/analyze-final.log",
+      "sha256": "50bca577eafd019e9878b96f25b6e0976941dc43342f07779fd0446d20082606",
+      "bytes": 200,
+      "stored_file": "analyze.log"
+    },
+    {
+      "label": "dimensions",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/screenshot-manifest.json",
+      "sha256": "a91971b7da5e8d19e440a75a514b71652b64b351eebb2a9510444837c749d1e3",
+      "bytes": 5218,
+      "stored_file": "dimensions.json"
+    },
+    {
+      "label": "report",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/REPORT.md",
+      "sha256": "f84aa59fa53c2f05189621be4bdd06fc97c1d4ebedefac4d29e0d4dcb0107a2a",
+      "bytes": 5094,
+      "stored_file": "report.md"
+    },
+    {
+      "label": "sources",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/SOURCES.md",
+      "sha256": "8b42205be2f664f2297f6aa69c568022e52a05c3d3b3eb4bddb7e81603c68e20",
+      "bytes": 1641,
+      "stored_file": "sources.md"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/review-source-without-fonts.tar.gz",
+      "sha256": "d2d65a3fffc45859db72c5a6461997c75619a51d42b41fa66e3e5474501525b4",
+      "bytes": 76534,
+      "stored_file": "source.gz"
+    },
+    {
+      "label": "wrong-canvas",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/attempt-before-surface-fix/screenshots/01-shelf-390x844.png",
+      "sha256": "bbb4173ca05a8f5b332f2ff5fb54f8ceb490539eed8614a9999dd3b5fec82c51",
+      "bytes": 92265,
+      "png_size": {
+        "width": 1600,
+        "height": 1200
+      },
+      "stored_file": "wrong-canvas.png"
+    },
+    {
+      "label": "before-large-type",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/attempt-before-large-type-fix/screenshots/06-shelf-320x640-scale2.png",
+      "sha256": "bd787fd05e6bff0b374b0a5f2606773bd74f06ab2a4b892ff58ddc81becfb0d0",
+      "bytes": 64713,
+      "png_size": {
+        "width": 640,
+        "height": 1280
+      },
+      "stored_file": "before-large-type.png"
+    }
+  ]
+}

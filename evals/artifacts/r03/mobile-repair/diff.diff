@@ -1,0 +1,364 @@
+--- before/lib/main.dart
++++ after/lib/main.dart
+@@ -178,20 +178,41 @@
+     return RenderAbstractViewport.of(render).getOffsetToReveal(render, 0).offset;
+   }
+ 
++  RenderParagraph? _textFor(int i) {
++    final render = paragraphKeys[i].currentContext?.findRenderObject();
++    return render is RenderPadding && render.child is RenderParagraph
++      ? render.child as RenderParagraph : null;
++  }
++
+   ReadingPosition _capture() {
+     if (!scroll.hasClients) return const ReadingPosition(0, 0);
+     var index = 0;
+     for (int i = 0; i < paragraphKeys.length; i++) {
+       if (_offsetFor(i) <= scroll.offset + 1) index = i;
+     }
+-    return ReadingPosition(index, math.max(0, scroll.offset - _offsetFor(index)));
++    final inside = math.max(0.0, scroll.offset - _offsetFor(index));
++    final text = _textFor(index);
++    if (text == null || inside >= text.size.height) return ReadingPosition(index, inside);
++    final position = text.getPositionForOffset(Offset(0, inside));
++    final lineTop = text.getOffsetForCaret(position, Rect.zero).dy;
++    final lineHeight = text.getFullHeightForCaret(position);
++    return ReadingPosition(index, inside, character: position.offset,
++      lineProgress: lineHeight > 0 ? ((inside - lineTop) / lineHeight).clamp(-1, 1) : 0);
+   }
+ 
+   void _restore(ReadingPosition position) {
+     if (!scroll.hasClients) return;
+     final index = position.paragraph.clamp(0, paragraphKeys.length - 1);
++    var inside = position.inside;
++    final text = _textFor(index);
++    if (text != null && position.character != null) {
++      final caret = TextPosition(offset: position.character!.clamp(0, text.text.toPlainText().length));
++      // Reflow changes pixel offsets. Restore the line containing the same text.
++      inside = text.getOffsetForCaret(caret, Rect.zero).dy
++        + position.lineProgress * text.getFullHeightForCaret(caret);
++    }
+     final target = position.paragraph == 0 && position.inside == 0
+-      ? 0.0 : _offsetFor(index) + position.inside;
++      ? 0.0 : _offsetFor(index) + inside;
+     scroll.jumpTo(target.clamp(0, scroll.position.maxScrollExtent));
+   }
+ 
+@@ -217,16 +238,15 @@
+ 
+   Future<void> _leave() async {
+     if (_leaving) return;
+-    _leaving = true;
++    setState(() => _leaving = true);
+     final saved = await _remember();
+     if (!mounted) return;
+-    if (saved) {
+-      Navigator.of(context).pop();
+-    } else {
+-      _leaving = false;
+-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+-        content: const Text('阅读位置未保存，请重试'),
+-        action: SnackBarAction(label: '重试', onPressed: _leave),
++    final messenger = ScaffoldMessenger.of(context);
++    Navigator.of(context).pop();
++    if (!saved) {
++      messenger.showSnackBar(const SnackBar(
++        content: Text('阅读位置未保存，已返回书架'),
++        duration: Duration(seconds: 8),
+       ));
+     }
+   }
+@@ -237,6 +257,8 @@
+   }
+ 
+   Future<void> _fontSettings() async {
++    // Keep one text anchor throughout a slider gesture, even across many reflows.
++    final anchor = _capture();
+     await showModalBottomSheet<void>(context: context, backgroundColor: paper, showDragHandle: true,
+       builder: (context) => StatefulBuilder(builder: (context, updateSheet) => SafeArea(child: Padding(
+         padding: const EdgeInsets.fromLTRB(24, 0, 24, 24), child: Column(mainAxisSize: MainAxisSize.min, children: [
+@@ -248,7 +270,6 @@
+               value: widget.store.fontSize,
+               semanticFormatterCallback: (value) => '${value.round()}号',
+               onChanged: (value) {
+-                final anchor = _capture();
+                 setState(() => widget.store.fontSize = value);
+                 updateSheet(() {});
+                 WidgetsBinding.instance.addPostFrameCallback((_) { if (mounted) _restore(anchor); });
+--- before/lib/storage.dart
++++ after/lib/storage.dart
+@@ -4,10 +4,17 @@
+ import 'package:flutter/services.dart';
+ 
+ class ReadingPosition {
+-  const ReadingPosition(this.paragraph, this.inside);
++  const ReadingPosition(this.paragraph, this.inside, {this.character, this.lineProgress = 0});
+   final int paragraph;
++  // Retained for records written before text anchors were introduced.
+   final double inside;
+-  Map<String, Object> toJson() => {'paragraph': paragraph, 'inside': inside};
++  final int? character;
++  final double lineProgress;
++  Map<String, Object> toJson() => {
++    'paragraph': paragraph, 'inside': inside,
++    if (character != null) 'character': character!,
++    'lineProgress': lineProgress,
++  };
+ }
+ 
+ class ShelfStore extends ChangeNotifier {
+@@ -36,6 +43,8 @@
+       positions[entry.key] = ReadingPosition(
+         ((item['paragraph'] as num?)?.toInt() ?? 0).clamp(0, 10000),
+         ((item['inside'] as num?)?.toDouble() ?? 0).clamp(0, 100000),
++        character: (item['character'] as num?)?.toInt().clamp(0, 100000),
++        lineProgress: ((item['lineProgress'] as num?)?.toDouble() ?? 0).clamp(-1, 1),
+       );
+     }
+     notifyListeners();
+@@ -43,7 +52,7 @@
+ 
+   Future<void> save() {
+     final data = jsonEncode({
+-      'version': 1,
++      'version': 2,
+       'fontSize': fontSize,
+       'positions': positions.map((key, value) => MapEntry(key, value.toJson())),
+     });
+@@ -54,7 +63,9 @@
+       await temporary.writeAsString(data, flush: true);
+       await temporary.rename(file.path);
+     });
+-    _pending = task;
++    // Keep the queue tail successful; each caller still receives its own failure.
++    // A rejected tail must not surface again when another reader queues a save.
++    _pending = task.then<void>((_) {}, onError: (Object _, StackTrace __) {});
+     notifyListeners();
+     return task;
+   }
+--- before/test/reading_flow_test.dart
++++ after/test/reading_flow_test.dart
+@@ -26,7 +26,7 @@
+     await icons.load();
+     debugDisableShadows = false;
+     temporary = await Directory.systemTemp.createTemp('paper-shelf-engine-');
+-    await Directory('../evidence/screenshots-final').create(recursive: true);
++    await Directory('../evidence/review-repair/screenshots-regression').create(recursive: true);
+   });
+ 
+   tearDownAll(() async => temporary.delete(recursive: true));
+@@ -39,7 +39,7 @@
+       expect(image.width, (tester.view.physicalSize.width * 2).round());
+       expect(image.height, (tester.view.physicalSize.height * 2).round());
+       final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
+-      await File('../evidence/screenshots-final/$name.png').writeAsBytes(bytes!.buffer.asUint8List());
++      await File('../evidence/review-repair/screenshots-regression/$name.png').writeAsBytes(bytes!.buffer.asUint8List());
+       debugPrint('ENGINE_SCREENSHOT $name logical=${boundary.size} pixels=${image.width}x${image.height}');
+       image.dispose();
+     });
+@@ -115,7 +115,7 @@
+       await verify.load();
+       expect(verify.fontSize, reloaded.fontSize);
+       expect(verify.positions.keys, containsAll(['letters', 'mountain', 'everyday']));
+-      await File('../evidence/persisted-state-sample.json').writeAsString(await reloaded.file.readAsString());
++      await File('../evidence/review-repair/persisted-state-sample.json').writeAsString(await reloaded.file.readAsString());
+     });
+     expect(tester.takeException(), isNull);
+     await tester.pumpWidget(const SizedBox());
+--- before/test/review_repair_test.dart
++++ after/test/review_repair_test.dart
+@@ -0,0 +1,194 @@
++import 'dart:convert';
++import 'dart:io';
++import 'dart:ui' as ui;
++import 'package:flutter/material.dart';
++import 'package:flutter/rendering.dart';
++import 'package:flutter/services.dart';
++import 'package:flutter_test/flutter_test.dart';
++import 'package:paper_shelf/main.dart';
++import 'package:paper_shelf/storage.dart';
++
++const fixed = bool.fromEnvironment('REPAIR_EXPECT_FIXED', defaultValue: true);
++const phase = fixed ? 'after' : 'before';
++
++void main() {
++  LiveTestWidgetsFlutterBinding().framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.onlyPumps;
++  final boundaryKey = GlobalKey();
++  late Directory temporary;
++
++  setUpAll(() async {
++    for (final pair in [
++      ['ShelfSans', 'assets/fonts/NotoSansCJKsc-Regular.otf'],
++      ['ShelfSerif', 'assets/fonts/NotoSerifCJKsc-Regular.otf'],
++    ]) {
++      final loader = FontLoader(pair[0]);
++      loader.addFont(Future.value(ByteData.sublistView(await File(pair[1]).readAsBytes())));
++      await loader.load();
++    }
++    final icons = FontLoader('MaterialIcons');
++    icons.addFont(rootBundle.load('fonts/MaterialIcons-Regular.otf'));
++    await icons.load();
++    debugDisableShadows = false;
++    temporary = await Directory.systemTemp.createTemp('paper-shelf-review-repair-');
++    await Directory('../evidence/review-repair/screenshots-$phase').create(recursive: true);
++  });
++  tearDownAll(() async => temporary.delete(recursive: true));
++
++  Future<void> screenshot(WidgetTester tester, String name) async {
++    await tester.pumpAndSettle();
++    final boundary = boundaryKey.currentContext!.findRenderObject() as RenderRepaintBoundary;
++    await tester.runAsync(() async {
++      final image = await boundary.toImage(pixelRatio: 2);
++      final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
++      await File('../evidence/review-repair/screenshots-$phase/$name.png').writeAsBytes(bytes!.buffer.asUint8List());
++      debugPrint('REPAIR_SCREENSHOT $phase/$name logical=${boundary.size} viewDPR=${tester.view.devicePixelRatio} exportRatio=2 pixels=${image.width}x${image.height}');
++      image.dispose();
++    });
++  }
++
++  Future<ShelfStore> start(WidgetTester tester, String filename) async {
++    const size = Size(390, 844);
++    tester.view.devicePixelRatio = 1;
++    tester.view.physicalSize = size;
++    tester.view.padding = FakeViewPadding(top: 24, bottom: 24);
++    await tester.binding.setSurfaceSize(size);
++    final store = ShelfStore(File('${temporary.path}/$filename.json'));
++    await tester.runAsync(store.load);
++    await tester.pumpWidget(RepaintBoundary(key: boundaryKey, child: ReadingApp(store: store)));
++    await tester.pumpAndSettle();
++    return store;
++  }
++
++  Future<void> open(WidgetTester tester) async {
++    await tester.tap(find.byKey(const Key('open-letters')));
++    await tester.pumpAndSettle();
++  }
++
++  ({int index, String visible, double y}) firstVisible(WidgetTester tester, int paragraph) {
++    final finder = find.byKey(Key('paragraph-$paragraph'));
++    final render = tester.renderObject<RenderParagraph>(finder);
++    final viewportTop = tester.getTopLeft(find.byKey(const Key('reader-scroll'))).dy;
++    final localY = viewportTop - tester.getTopLeft(finder).dy;
++    final position = render.getPositionForOffset(Offset(0, localY + 1));
++    final end = render.getPositionForOffset(Offset(render.size.width, localY + 1));
++    final text = render.text.toPlainText();
++    return (index: position.offset, visible: text.substring(position.offset, end.offset), y: localY);
++  }
++
++  testWidgets('font reflow preserves actual text anchor within a paragraph', (tester) async {
++    final store = await start(tester, 'anchor');
++    await open(tester);
++    final state = tester.state<ReaderState>(find.byType(ReaderPage));
++    // Put the viewport well inside paragraph 3, rather than testing just its start.
++    final textFinder = find.byKey(const Key('paragraph-2'));
++    final currentTop = tester.getTopLeft(textFinder).dy;
++    final viewportTop = tester.getTopLeft(find.byKey(const Key('reader-scroll'))).dy;
++    state.scroll.jumpTo(state.scroll.offset + currentTop - viewportTop + 3 * 19 * 1.9 + 4);
++    await tester.pumpAndSettle();
++    final before = firstVisible(tester, 2);
++    expect(before.index, greaterThan(20));
++    await screenshot(tester, '01-anchor-font19');
++    await tester.tap(find.byKey(const Key('font-settings')));
++    await tester.pumpAndSettle();
++    final slider = find.byKey(const Key('font-slider'));
++    final rect = tester.getRect(slider);
++    // A real slider gesture crosses several divisions, each with a new layout.
++    final gesture = await tester.startGesture(Offset(rect.left + 40, rect.center.dy));
++    for (final fraction in [.4, .6, .8, 1.0]) {
++      await gesture.moveTo(Offset(rect.left + 20 + (rect.width - 40) * fraction, rect.center.dy));
++      await tester.pump(const Duration(milliseconds: 90));
++    }
++    await gesture.up();
++    await tester.pumpAndSettle();
++    expect(store.fontSize, 28);
++    await tester.tap(find.byKey(const Key('font-done')));
++    await tester.pumpAndSettle();
++    final after = firstVisible(tester, 2);
++    debugPrint('ANCHOR_RESULT phase=$phase beforeIndex=${before.index} beforeText=${before.visible} afterIndex=${after.index} afterText=${after.visible} delta=${after.index - before.index} beforeY=${before.y} afterY=${after.y}');
++    await screenshot(tester, '02-anchor-font28');
++    if (fixed) {
++      final render = tester.renderObject<RenderParagraph>(textFinder);
++      final anchorY = render.getOffsetForCaret(TextPosition(offset: before.index), Rect.zero).dy;
++      final distanceFromViewportTop = tester.getTopLeft(textFinder).dy + anchorY - viewportTop;
++      debugPrint('ANCHOR_GEOMETRY originalCharacter=${before.index} distanceFromViewportTop=$distanceFromViewportTop');
++      expect(distanceFromViewportTop.abs(), lessThanOrEqualTo(28 * 1.9));
++      expect((after.index - before.index).abs(), lessThanOrEqualTo(12));
++    } else {
++      expect(before.index - after.index, greaterThan(12));
++    }
++    if (fixed) {
++      final savedOffset = state.scroll.offset;
++      await tester.runAsync(store.save);
++      await tester.tap(find.byKey(const Key('back-shelf')));
++      await tester.pumpAndSettle();
++      await tester.runAsync(store.save);
++      await tester.pumpWidget(const SizedBox());
++      await tester.pumpAndSettle();
++      final reloaded = await start(tester, 'anchor');
++      await open(tester);
++      final restored = firstVisible(tester, 2);
++      final restoredState = tester.state<ReaderState>(find.byType(ReaderPage));
++      expect(reloaded.fontSize, 28);
++      expect(restored.index, after.index);
++      expect((restored.y - after.y).abs(), lessThan(2));
++      expect((restoredState.scroll.offset - savedOffset).abs(), lessThan(2));
++      debugPrint('PERSISTENCE_RESULT newStore=true fontSize=${reloaded.fontSize} visibleIndex=${restored.index} pixelDelta=${restoredState.scroll.offset - savedOffset}');
++      await screenshot(tester, '04-reloaded-font28');
++    }
++    await tester.pumpWidget(const SizedBox());
++    await tester.pumpAndSettle();
++  });
++
++  testWidgets('real write failure still allows returning with unsaved notice', (tester) async {
++    final store = await start(tester, 'failure');
++    await open(tester);
++    await tester.runAsync(store.save);
++    late String persistedBefore;
++    await tester.runAsync(() async {
++      persistedBefore = await store.file.readAsString();
++      // A directory at the atomic temporary-file path makes the real OS write fail.
++      await Directory('${store.file.path}.tmp').create();
++    });
++    final state = tester.state<ReaderState>(find.byType(ReaderPage));
++    state.scroll.jumpTo(600);
++    await tester.pumpAndSettle();
++    await tester.tap(find.byKey(const Key('back-shelf')));
++    await tester.pumpAndSettle();
++    await tester.runAsync(() async { await Future<void>.delayed(const Duration(milliseconds: 40)); });
++    await tester.pumpAndSettle();
++    final readerPresent = find.byType(ReaderPage).evaluate().isNotEmpty;
++    debugPrint('WRITE_FAILURE_RESULT phase=$phase realFileObstacle=directory-at-tmp readerStillPresent=$readerPresent');
++    if (fixed) {
++      expect(find.byType(ReaderPage), findsNothing);
++      expect(find.text('三本示例短篇'), findsOneWidget);
++      expect(find.text('阅读位置未保存，已返回书架'), findsOneWidget);
++    } else {
++      expect(find.byType(ReaderPage), findsOneWidget);
++      expect(find.text('阅读位置未保存，请重试'), findsOneWidget);
++      await tester.tap(find.byKey(const Key('back-shelf')));
++      await tester.pumpAndSettle();
++      expect(find.byType(ReaderPage), findsOneWidget);
++    }
++    await screenshot(tester, '03-write-failure-back');
++    if (fixed) {
++      // The same actual failing file also must not trap system-back navigation.
++      await open(tester);
++      await tester.binding.handlePopRoute();
++      await tester.pumpAndSettle();
++      await tester.runAsync(() async { await Future<void>.delayed(const Duration(milliseconds: 40)); });
++      await tester.pumpAndSettle();
++      expect(find.byType(ReaderPage), findsNothing);
++      expect(find.text('三本示例短篇'), findsOneWidget);
++      debugPrint('SYSTEM_BACK_FAILURE_RESULT readerStillPresent=false unsavedNotice=true');
++    }
++    await tester.runAsync(() async {
++      final persistedAfter = await store.file.readAsString();
++      expect(persistedAfter, persistedBefore);
++      final data = jsonDecode(persistedAfter) as Map<String, dynamic>;
++      debugPrint('WRITE_FAILURE_DISK unchanged=true savedParagraph=${data['positions']['letters']['paragraph']}');
++    });
++    expect(tester.takeException(), isNull);
++    await tester.pumpWidget(const SizedBox());
++    await tester.pumpAndSettle();
++  });
++}

@@ -1,0 +1,127 @@
+{
+  "created_at_utc": "2026-10-20T23:15:38.857464+00:00",
+  "case": "r03-mobile-manual-repair",
+  "target_platform": "Flutter source; manual repair after blind review",
+  "actual_runtime": "flutter_tester LiveTest engine; real Dart File failure; no Android device/APK",
+  "declared_skill_revision": "01b2ad2",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/01b2ad2/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "c7d8512397ec1422d3646fb059b0b88f2de1a54b6627bc7f07282db3eb6525f4",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "5cb65de9e146bd8692c4d559aa8c656bbef3d096485779675c7b757f9a1afe18",
+    "references/verification.md": "d8bb4725990288edaddf81c56a0dc72acb1ac9b380958245f84df936d42b36b2",
+    "references/writing.md": "a7ab0fa05982bb195959acffaa001acef9b3ef1caf72f581b11e5af8c6cfcbd2",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "report",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/REPORT.md",
+      "sha256": "556deb20ebadebb4151c37748da5256adc178113644eee10b80103ff943cecfc",
+      "bytes": 5857,
+      "stored_file": "report.md"
+    },
+    {
+      "label": "reproduction",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/logs/reproduce-before.log",
+      "sha256": "fc441227dff58cf0ebac293e3696504e7b9ac7f00a29d89203f4f513be48dad6",
+      "bytes": 1097,
+      "stored_file": "reproduction.log"
+    },
+    {
+      "label": "tests",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/logs/test-final.log",
+      "sha256": "be7ba6ca05fd8c88fa1875e1b94c8245b23309c859f2f78d471470ea59b90e4c",
+      "bytes": 2923,
+      "stored_file": "tests.log"
+    },
+    {
+      "label": "analyze",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/logs/analyze-final.log",
+      "sha256": "b85c95e11ea1bce2358e9b8dbe0d28d4b0fbc090551f9fd6faf81a3e397e04bc",
+      "bytes": 199,
+      "stored_file": "analyze.log"
+    },
+    {
+      "label": "before-small",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/screenshots-before/01-anchor-font19.png",
+      "sha256": "1f0b6aeb8d4544986e35d15104fc4cf81d0aa6e5e4a8c5a975df9db3b7b9ea9d",
+      "bytes": 221803,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "before-small.png"
+    },
+    {
+      "label": "before-large",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/screenshots-before/02-anchor-font28.png",
+      "sha256": "c8d1e2d1be412788e58a5be8d24678ae03866e399d514b95831c37b90fd82782",
+      "bytes": 192521,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "before-large.png"
+    },
+    {
+      "label": "before-failure",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/screenshots-before/03-write-failure-back.png",
+      "sha256": "07cea064b6a25364c2e731900f00840ebf40ddf00969bcf247acf670c0e1771c",
+      "bytes": 227339,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "before-failure.png"
+    },
+    {
+      "label": "after-large",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/screenshots-after/02-anchor-font28.png",
+      "sha256": "eec08a0c9a1253864c503b88e2cfd181f482b89a4018d4fe7951dc1001ebcd1f",
+      "bytes": 190357,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "after-large.png"
+    },
+    {
+      "label": "after-failure",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/screenshots-after/03-write-failure-back.png",
+      "sha256": "dad3eaf0be3624c638d39ae4f18b54beccf3f3f97d3a6a166d1fb6b0dc102af7",
+      "bytes": 103088,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "after-failure.png"
+    },
+    {
+      "label": "after-reload",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/screenshots-after/04-reloaded-font28.png",
+      "sha256": "eec08a0c9a1253864c503b88e2cfd181f482b89a4018d4fe7951dc1001ebcd1f",
+      "bytes": 190357,
+      "png_size": {
+        "width": 780,
+        "height": 1688
+      },
+      "stored_file": "after-reload.png"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/review-source-without-fonts.tar.gz",
+      "sha256": "db834c6459cf87091f6fd90139b9ed3b8925df96e3a49638ae6e836a268ed113",
+      "bytes": 80005,
+      "stored_file": "source.gz"
+    },
+    {
+      "label": "diff",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-mobile/evidence/review-repair/source.diff",
+      "sha256": "c1e994508117d267a8b7158883cee27de4e1a04d18e405a8b74c50b77721200f",
+      "bytes": 17302,
+      "stored_file": "diff.diff"
+    }
+  ]
+}

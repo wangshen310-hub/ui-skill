@@ -1,0 +1,80 @@
+{
+  "layer": "official WXML compiled; miniprogram-simulate in Chrome DOM; not DevTools or WeChat",
+  "mode": "final",
+  "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/source",
+  "results": [
+    {
+      "label": "Initial date, court and four hourly slots rendered",
+      "passed": true
+    },
+    {
+      "label": "No slot: confirm is guarded",
+      "passed": true
+    },
+    {
+      "label": "Full 18:00 slot cannot be selected",
+      "passed": true
+    },
+    {
+      "label": "Select 19:00–20:00 gives 2号场 ¥80",
+      "passed": true
+    },
+    {
+      "label": "Confirm opens review with date/court/time/price",
+      "passed": true
+    },
+    {
+      "label": "Return to selection preserves slot and fee",
+      "passed": true
+    },
+    {
+      "label": "Changing date clears old slot and price",
+      "passed": true
+    },
+    {
+      "label": "Changing court refreshes context",
+      "passed": true
+    },
+    {
+      "label": "Different context can select a new time",
+      "passed": true
+    },
+    {
+      "label": "Local confirmation discloses no real booking/payment",
+      "passed": true
+    },
+    {
+      "label": "All-full day/court shows clear alternative action",
+      "passed": true
+    },
+    {
+      "label": "320px viewport has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "label": "320px primary remains in viewport",
+      "passed": true
+    },
+    {
+      "label": "320px date touch target is at least 44px each way",
+      "passed": true
+    },
+    {
+      "label": "320px court and confirm touch targets are at least 44px high",
+      "passed": true
+    },
+    {
+      "label": "320px selected summary stays above the fixed footer",
+      "passed": true
+    },
+    {
+      "label": "320px horizontal date strip can reach the seventh date",
+      "passed": true
+    },
+    {
+      "label": "No browser JS exception",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,29 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/reading_flow_test.dart
+00:00 +0: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/reading_flow_test.dart: (setUpAll)
+00:00 +0: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/reading_flow_test.dart: phone flow, real file persistence, font settings and three books
+ENGINE_SCREENSHOT 01-shelf-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 02-reader-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 03-resumed-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 04-font-settings-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+ENGINE_SCREENSHOT 05-reader-font-large-390x844 logical=Size(390.0, 844.0) pixels=780x1688
+00:09 +1: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/reading_flow_test.dart: 320px width and 200 percent system text remain usable
+ENGINE_SCREENSHOT 06-shelf-320x640-scale2 logical=Size(320.0, 640.0) pixels=640x1280
+ENGINE_SCREENSHOT 07-reader-320x640-scale2 logical=Size(320.0, 640.0) pixels=640x1280
+00:17 +2: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/reading_flow_test.dart: (tearDownAll)
+00:17 +2: loading /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/review_repair_test.dart
+00:18 +2: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/review_repair_test.dart: (setUpAll)
+00:18 +2: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/review_repair_test.dart: font reflow preserves actual text anchor within a paragraph
+REPAIR_SCREENSHOT after/01-anchor-font19 logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+ANCHOR_RESULT phase=after beforeIndex=49 beforeText=份？我说，先看看。 afterIndex=44 afterText=句，要哪一份？我说，先 delta=-5 beforeY=112.29999999999995 afterY=218.2842112315259
+REPAIR_SCREENSHOT after/02-anchor-font28 logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+ANCHOR_GEOMETRY originalCharacter=49 distanceFromViewportTop=-6.484208179768075
+PERSISTENCE_RESULT newStore=true fontSize=28.0 visibleIndex=44 pixelDelta=0.0
+REPAIR_SCREENSHOT after/04-reloaded-font28 logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+00:24 +3: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/review_repair_test.dart: real write failure still allows returning with unsaved notice
+WRITE_FAILURE_RESULT phase=after realFileObstacle=directory-at-tmp readerStillPresent=false
+REPAIR_SCREENSHOT after/03-write-failure-back logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+SYSTEM_BACK_FAILURE_RESULT readerStillPresent=false unsavedNotice=true
+WRITE_FAILURE_DISK unchanged=true savedParagraph=0
+00:27 +4: /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/review_repair_test.dart: (tearDownAll)
+00:27 +4: All tests passed!

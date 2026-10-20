@@ -1,0 +1,9 @@
+{
+  "layer": "Tencent Cloud cleanup of this case only",
+  "owned_processes_found_after_runner_finally": [],
+  "profile_existed_before_cleanup": true,
+  "profile_exists_after_cleanup": false,
+  "port_18633_listening_after_cleanup": false,
+  "isolated_dependencies_retained_for_reproduction": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/harness/node_modules",
+  "other_sessions_or_services_touched": false
+}

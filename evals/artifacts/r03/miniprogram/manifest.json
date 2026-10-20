@@ -1,0 +1,141 @@
+{
+  "created_at_utc": "2026-10-20T23:07:39.545103+00:00",
+  "case": "r03-miniprogram",
+  "target_platform": "Native WeChat source",
+  "actual_runtime": "Official compilers and Chrome DOM miniprogram-simulate; not WeChat DevTools/device",
+  "declared_skill_revision": "856ebb6",
+  "skill_directory": "/opt/ui-skill-lab-20261020/baselines/856ebb6/ui-skill",
+  "skill_runtime_sha256": {
+    "SKILL.md": "c7d8512397ec1422d3646fb059b0b88f2de1a54b6627bc7f07282db3eb6525f4",
+    "agents/openai.yaml": "1e8549bce9e96afe27c1bc58817fd3955a417370bcb2893a38d1c492236d8cbf",
+    "references/art-direction.md": "89c838367f053bcdb31398e0e8e4264842433ed1ed605f7ed790097f7d0a1460",
+    "references/design-spec.md": "5cb65de9e146bd8692c4d559aa8c656bbef3d096485779675c7b757f9a1afe18",
+    "references/verification.md": "5c7e4ea8d8399eb327f99e691b1efd8a544bd0be1ded92079256895fa123b473",
+    "references/writing.md": "0c42752fc541f1d9f2ea33a1e1e201bf6c0390e68e5c624eaa1bc3dcd0aedc4d",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+  },
+  "artifacts": [
+    {
+      "label": "reference",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/reference.png",
+      "sha256": "0b9bd62a56f5f134a69ad9611f059985fd3b5a3ab05448ec01b4eb5b8fc2b240",
+      "bytes": 1161967,
+      "png_size": {
+        "width": 853,
+        "height": 1844
+      },
+      "stored_file": "reference.png"
+    },
+    {
+      "label": "selected",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/02-selected-390.png",
+      "sha256": "39c4458f7df29684b1a6c189f829980e7a51fa1a24adcd2b8214afebe1b979d5",
+      "bytes": 49640,
+      "png_size": {
+        "width": 390,
+        "height": 844
+      },
+      "stored_file": "selected.png"
+    },
+    {
+      "label": "review",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/03-review-390.png",
+      "sha256": "16f595b6563c9594cbf923ec60b3dc70cf02da2be497fe84024aa6a74cf7cc38",
+      "bytes": 39570,
+      "png_size": {
+        "width": 390,
+        "height": 844
+      },
+      "stored_file": "review.png"
+    },
+    {
+      "label": "narrow",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/06-selected-320.png",
+      "sha256": "c676b2a04aabbbac5d8af1da6ebf7cef9cf9777a04116a373ce5aa66a79d2675",
+      "bytes": 40790,
+      "png_size": {
+        "width": 320,
+        "height": 720
+      },
+      "stored_file": "narrow.png"
+    },
+    {
+      "label": "empty",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/05-all-full-390.png",
+      "sha256": "71c4c3c04d014ae57374ae035ef6d58d04bec9d28217c93d040823fabc8d04a5",
+      "bytes": 51620,
+      "png_size": {
+        "width": 390,
+        "height": 844
+      },
+      "stored_file": "empty.png"
+    },
+    {
+      "label": "checks",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/behavior.json",
+      "sha256": "4dcd9fd9b7bbeec0e8821a46055bfc28d39db704c93ef99ecea80e1a92b66bea",
+      "bytes": 1945,
+      "stored_file": "checks.json"
+    },
+    {
+      "label": "geometry",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/geometry-320.json",
+      "sha256": "18cc9ae11d26266f85d871fae0b4dd6512790729a3597de745a5198770c722b8",
+      "bytes": 809,
+      "stored_file": "geometry.json"
+    },
+    {
+      "label": "compile",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/final/compile.json",
+      "sha256": "8bca450ea3bb1aaed95bbb5dce144496bf3d28de8604e6ea019e09e0b2a9864c",
+      "bytes": 220,
+      "stored_file": "compile.json"
+    },
+    {
+      "label": "covered-summary",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/attempt-03-narrow-overlap/06-selected-320.png",
+      "sha256": "f5d8faa8393d7aed4575d685b1bdcf0ab1dab9631ef65010a7c87a0051ee8f32",
+      "bytes": 39705,
+      "png_size": {
+        "width": 320,
+        "height": 758
+      },
+      "stored_file": "covered-summary.png"
+    },
+    {
+      "label": "covered-geometry",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/attempt-03-narrow-overlap/geometry-320.json",
+      "sha256": "92dfe46f9fd50756cd346832388129b7147f744da9d9e7d9a8597f9eb645ee90",
+      "bytes": 815,
+      "stored_file": "covered-geometry.json"
+    },
+    {
+      "label": "source",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/source-final.tar.gz",
+      "sha256": "8b77ed62726b666cf9a8f454341520a33b108e83a23fd319b689515ebe954c64",
+      "bytes": 5065,
+      "stored_file": "source.gz"
+    },
+    {
+      "label": "initial-source",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/source-initial.tar.gz",
+      "sha256": "360295a11a6c9debc6b7d461ca1428ae8aa1b1f77d052b9c92ab76c7a8120ef7",
+      "bytes": 4917,
+      "stored_file": "initial-source.gz"
+    },
+    {
+      "label": "report",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/README.md",
+      "sha256": "c737c6d22ed6e2c2996471dadacbf3a7ab155dfc338805c1b7af10ea835e2382",
+      "bytes": 5099,
+      "stored_file": "report.md"
+    },
+    {
+      "label": "cleanup",
+      "source": "/opt/ui-skill-lab-20261020/round-0003-miniprogram/evidence/cleanup.json",
+      "sha256": "ffb641f156b979e7755fada1b73edf09842e68304b2cf38ac73b16bafb8ef982",
+      "bytes": 412,
+      "stored_file": "cleanup.json"
+    }
+  ]
+}

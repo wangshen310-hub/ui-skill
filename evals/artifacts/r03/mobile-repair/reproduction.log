@@ -1,0 +1,13 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading /opt/ui-skill-lab-20261020/round-0003-mobile/app/test/review_repair_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: font reflow preserves actual text anchor within a paragraph
+REPAIR_SCREENSHOT before/01-anchor-font19 logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+ANCHOR_RESULT phase=before beforeIndex=49 beforeText=份？我说，先看看。 afterIndex=22 afterText=海报。老板把晚报分成两 delta=-27 beforeY=112.29999999999995 afterY=112.29999999999995
+REPAIR_SCREENSHOT before/02-anchor-font28 logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+00:04 +1: real write failure still allows returning with unsaved notice
+WRITE_FAILURE_RESULT phase=before realFileObstacle=directory-at-tmp readerStillPresent=true
+REPAIR_SCREENSHOT before/03-write-failure-back logical=Size(390.0, 844.0) viewDPR=1.0 exportRatio=2 pixels=780x1688
+WRITE_FAILURE_DISK unchanged=true savedParagraph=0
+00:07 +2: (tearDownAll)
+00:07 +2: All tests passed!
