@@ -1,0 +1,13 @@
+interface:
+  display_name: ui-skill
+  short_description: 先用图像生成设计参考，再按图实现精美、响应式且可交互的 UI
+  default_prompt: 使用 $ui-skill，先生成精美的界面参考图，再依据参考图完成 UI 设计与实现。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
