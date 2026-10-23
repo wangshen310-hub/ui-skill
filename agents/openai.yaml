@@ -1,7 +1,7 @@
 interface:
   display_name: "ui-skill"
   short_description: "先图后实现，按平台设计简洁、有辨识度的 UI，并审校文案和截图"
-  default_prompt: "使用 $ui-skill，按内容和目标平台设计简洁、有辨识度的 UI，写自然具体的文案，先生成并查看参考图，再实现和验收。"
+  default_prompt: "使用 $ui-skill，先用真实内容确定信息主次、布局依据和视觉重点，再生成并查看参考图，在目标平台实现、对照打磨。布局简洁，文案自然具体，保留必要操作与状态。"
   icon_small: "assets/icon.svg"
   icon_large: "assets/icon.svg"
 policy:
